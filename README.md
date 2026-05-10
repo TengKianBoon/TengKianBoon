@@ -28,7 +28,7 @@ My GitHub is a working portfolio for AI-assisted diligence, market intelligence,
 - COO, 180Climate
 - Business development and investment structuring across Singapore and Indonesia
 - Former President Director / Country Manager, Gemalto Indonesia
-- NTU Singapore FlexiMasters in Business AI & Technology
+- NTU Singapore FlexiMasters in Business AI & Technology. Official results: A+, A+, A, A-, A- across five 3-AU modules.  Weighted average: 4.8/5.0, computed from NTU’s grade-point guide on the official result slip.
 
 ## Trust principles
 
