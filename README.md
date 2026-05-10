@@ -1,9 +1,11 @@
 # Kian Boon (John) Teng
 
-COO / Commercial & Investment Structuring | Climate Finance | Agentic AI Operating Systems  
+COO / Commercial & Investment Structuring | Climate Finance | Agentic AI Operating Systems 
+
 Singapore–Indonesia corridor | Forest carbon, sustainable infrastructure, AI-enabled due diligence
 
 I work at the intersection of strategy, capital, AI-enabled operations, and nature-positive investment.  
+
 My GitHub is a working portfolio for AI-assisted diligence, market intelligence, evidence review, and governance-by-design workflows.
 
 ## What I use GitHub for
