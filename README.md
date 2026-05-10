@@ -33,6 +33,7 @@ My GitHub is a working portfolio for AI-assisted diligence, market intelligence,
 ## Trust principles
 
 No confidential client data is published here. Public repositories use synthetic examples, public sources, or redacted templates.  
+
 AI outputs are treated as draft assistance only; human review, source checking, governance, and auditability remain essential.
 
 ## Connect
