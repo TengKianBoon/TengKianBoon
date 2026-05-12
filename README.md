@@ -2,11 +2,9 @@
 
 COO / Commercial & Investment Structuring | Climate Finance | Agentic AI Operating Systems 
 
-Singapore–Indonesia corridor | Forest carbon, sustainable infrastructure, AI-enabled due diligence
+Singapore–Indonesia corridor | Forest carbon, sustainable infrastructure, I work at the intersection of strategy, capital, AI-enabled operations, and nature-positive investment.  
 
-I work at the intersection of strategy, capital, AI-enabled operations, and nature-positive investment.  
-
-My GitHub is a working portfolio for AI-assisted diligence, market intelligence, evidence review, and governance-by-design workflows.
+I can lead AI strategy, originate business value, design governed workflows, and understand enough of the technical architecture to make AI adoption executable, auditable, and trusted.
 
 ## What I use GitHub for
 
