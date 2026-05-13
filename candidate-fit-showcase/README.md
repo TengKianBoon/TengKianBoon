@@ -9,10 +9,26 @@ The point of the project is to show how a real business workflow can become a go
 ## What Employers Should Notice
 
 - Business-to-AI translation: a messy recruiting workflow is converted into a structured decision-support system.
+- Executive decision framing: AI initiatives should start with why the workflow matters, what business outcome is worth funding, and whether build, buy, or defer is the right choice.
+- Financial discipline: serious AI adoption must weigh ROI, capex, opex, maintenance load, user training, vendor risk, and the cost of failed adoption.
 - Agent harness thinking: the app constrains inputs, tools, actions, data movement, and outputs before any AI model is introduced.
 - Governance by design: human review, fair-hiring guardrails, auditability, and no autonomous employment decisions.
+- Trust and adoption: safety, security, explainability, and user confidence are adoption requirements, not afterthoughts.
 - Outcome-driven engineering: fit is judged against a visible rubric, not vague prompt output.
 - Enterprise roadmap: the same pattern can scale to grader agents, specialist subagents, governed memory, reusable skills, advisor models, and scheduled routines.
+
+## Executive Decision Layer
+
+The harder C-level question is not only how to build the system. It is deciding whether it should be built, what outcome justifies the investment, which risks are acceptable, and how employees will actually adopt it.
+
+For an enterprise AI workflow, I would evaluate:
+
+- **Why:** the business pain, decision bottleneck, revenue upside, risk reduction, or productivity gain.
+- **What:** the smallest useful workflow that can prove value before expanding.
+- **Economics:** expected ROI against capex, opex, implementation effort, maintenance, vendor cost, and change-management burden.
+- **Adoption:** whether managers and employees will trust the workflow enough to use it in daily operations.
+- **Governance:** security, privacy, audit trails, human approval points, accountability, and failure modes.
+- **Scale:** whether the operating model can expand across departments without creating unmanaged AI risk.
 
 ## Public-Safe Design
 
