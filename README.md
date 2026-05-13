@@ -4,7 +4,7 @@ C-level Operator | Climate Finance & Sustainable Infrastructure | AI Operating M
 
 I work across the Singapore-Indonesia corridor at the intersection of strategy, capital, commercial operations, AI-enabled transformation, and nature-positive investment.
 
-I bring senior operating experience with practical AI fluency: able to shape executive strategy, design governed AI workflows, architect usable business solutions, and lead teams from experimentation into daily adoption.
+I bring senior operating experience with practical AI fluency: able to shape executive strategy, decide why and what AI workflows are worth building, evaluate ROI against capex/opex and adoption risk, design governed solutions, and lead teams from experimentation into trusted daily use.
 
 ## Enterprise AI & Governance Showcase
 
@@ -14,11 +14,12 @@ A privacy-first, standalone HTML app that compares up to five anonymized candida
 
 This project is intentionally positioned as more than an HR tool. It demonstrates how I think about enterprise AI adoption from a C-level operating and solution-architecture perspective:
 
+- Strategic fit: start with why the workflow matters, what business outcome is worth funding, and whether build, buy, or defer is the right decision.
+- Financial discipline: assess ROI against capex, opex, implementation effort, maintenance, training, vendor cost, and the cost of failed adoption.
 - Agent harness design: bounded inputs, controlled execution, no hidden file access, no network calls, and visible output logic.
 - Governance by design: human-in-the-loop review, fair-hiring guardrails, audit-friendly evidence, and no autonomous hiring decisions.
-- Outcome-driven delivery: explicit rubrics, explainable scoring, quality checks, and recruiter decision support.
+- Trust and adoption: safety, security, explainability, and user confidence are core adoption requirements, not technical afterthoughts.
 - AI operating model design: clear separation between user interface, context handling, scoring logic, QA checks, and final human judgment.
-- Adoption roadmap: future-ready patterns for subagents, grader agents, governed memory, reusable skills, advisor models, and scheduled routines.
 
 Project links:
 
@@ -33,6 +34,7 @@ Project links:
 - Agentic AI governance patterns: human approval, auditability, logging, and risk controls
 - Investor-ready evidence-pack templates for carbon, MRV, ESG, and infrastructure opportunities
 - Corporate AI app design patterns for agent harnesses, rubrics, grader workflows, memory, and orchestration
+- Executive AI adoption thinking: use-case selection, ROI, capex/opex, trust, safety, governance, and operating-model rollout
 
 ## Featured Work
 
