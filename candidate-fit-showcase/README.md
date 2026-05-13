@@ -1,8 +1,8 @@
-# CAIO Candidate Fit & Agent Harness Showcase
+# Enterprise AI Candidate Fit & Agent Harness Showcase
 
 A privacy-first, standalone HTML demo that compares up to five anonymized candidate resumes or CVs against one job description, ranks fit, explains evidence, highlights gaps, and produces recruiter-ready review outputs.
 
-This is intentionally framed as more than an HR utility. It is a compact portfolio artifact for Chief AI Officer, AI Transformation, Solution Architect, and Corporate AI Governance roles.
+This is intentionally framed as more than an HR utility. It is a compact portfolio artifact for leadership roles spanning AI transformation, solution architecture, operating model design, and corporate AI governance.
 
 The point of the project is to show how a real business workflow can become a governed AI-style application: bounded context, visible controls, explicit rubrics, explainable outputs, human review, and a roadmap toward agent orchestration.
 
