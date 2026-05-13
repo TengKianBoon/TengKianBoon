@@ -14,8 +14,8 @@ A privacy-first, standalone HTML app that compares up to five anonymized candida
 
 This project is intentionally positioned as more than an HR tool. It demonstrates how I think about enterprise AI adoption from a C-level operating and solution-architecture perspective:
 
-- Strategic fit: start with why the workflow matters, what business outcome is worth funding, and whether build, buy, or defer is the right decision.
-- Financial discipline: assess ROI against capex, opex, implementation effort, maintenance, training, vendor cost, and the cost of failed adoption.
+- Strategic fit: start with why the workflow matters, what business outcome is worth funding, and whether build, buy, or manual is the right decision - never over engineer simple processes.
+- Financial discipline: assess ROI against capex, opex, implementation effort, maintenance, training, and the cost of failed adoption.
 - Agent harness design: bounded inputs, controlled execution, no hidden file access, no network calls, and visible output logic.
 - Governance by design: human-in-the-loop review, fair-hiring guardrails, audit-friendly evidence, and no autonomous hiring decisions.
 - Trust and adoption: safety, security, explainability, and user confidence are core adoption requirements, not technical afterthoughts.
