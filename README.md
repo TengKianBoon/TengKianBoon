@@ -8,7 +8,7 @@ I can lead AI strategy, originate business value, design governed workflows, and
 
 ## CAIO / Corporate AI Showcase
 
-**Featured project: [Candidate Fit Showcase](https://github.com/TengKianBoon/TengKianBoon/tree/main/candidate-fit-showcase)**
+**Featured project: [CAIO Candidate Fit & Agent Harness Showcase](https://github.com/TengKianBoon/TengKianBoon/tree/main/candidate-fit-showcase)**
 
 A privacy-first, standalone HTML app that compares up to five anonymized candidate resumes or CVs against one job description, ranks fit, explains evidence, highlights gaps, and produces recruiter-ready interview prompts.
 
@@ -36,7 +36,7 @@ Project links:
 
 ## Featured work
 
-- Candidate Fit Showcase: explainable JD-to-candidate matching and recruiter workflow architecture
+- CAIO Candidate Fit & Agent Harness Showcase: explainable JD-to-candidate matching, audit trail, governance controls, and enterprise agent roadmap
 - AI vendor and agentic architecture monitoring
 - Forest carbon / MRV diligence workflow prototypes
 - Climate-finance evidence-pack templates
