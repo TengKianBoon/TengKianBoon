@@ -2,16 +2,23 @@ Kian Boon (John) Teng
 
 Enterprise AI: from executive intent to shipped, governed systems
 
-C-level operator · forward-deployed AI builder · climate finance & sustainable infrastructure · Singapore–Indonesia corridor
+C-level operator · shipping governed enterprise AI · climate finance & sustainable infrastructure · Singapore–Indonesia corridor
 
 I work where business strategy meets working AI — deciding which workflows are worth building, what outcome justifies the spend, and then shipping governed systems that teams actually adopt. I bring senior operating experience and practical building fluency: I can sit with the real problem, shape the strategy, design the solution, and lead it from prototype into trusted daily use.
 
 
-How I approach enterprise AI:
+How I approach enterprise AI
 
 Start from why and what. Business pain, decision bottleneck, ROI against capex/opex, build-vs-buy — settled before any model is introduced. Never over-engineer a simple process.
+
 Design for trust from day one. Bounded inputs, human-in-the-loop review, auditable evidence, explicit cost and quality gates, explainable outputs.
+
 Own the last mile. Take messy, real problems through the full arc: problem → constraints → build → deployment → adoption.
+
+
+Live systems
+
+Carbon operations platform and EUDR compliance screener — designed and shipped at 180Climate: carbon.180climate.net · eudr.180climate.net — 463 automated tests, CI pipeline, 18 architecture decision records, human-in-the-loop gates.
 
 
 Selected work
@@ -27,24 +34,26 @@ LLM Decision Lab — A decision harness that compares multiple model answers to 
 
 What I use GitHub for
 
-AI-enabled due-diligence and document-intelligence workflows for climate finance and infrastructure
-Market and regulatory-intelligence automation
-Agentic governance patterns: human approval, auditability, logging, cost and risk controls
-Investor-grade evidence-pack templates for carbon, MRV, and ESG opportunities
-Reusable enterprise AI app patterns: agent harnesses, rubrics, graders, memory, orchestration
+* AI-enabled due-diligence and document-intelligence workflows for climate finance and infrastructure
+* Market and regulatory-intelligence automation
+* Agentic governance patterns: human approval, auditability, logging, cost and risk controls
+* Investor-grade evidence-pack templates for carbon, MRV, and ESG opportunities
+* Reusable enterprise AI app patterns: agent harnesses, rubrics, graders, memory, orchestration
 
 
 Background
 
-COO, 180Climate — forest-conservation carbon, Indonesia (BeZero A-rated, VCS/CCB Gold)
-VP Business Development, Aserra Partners — investments and fund structuring across the Singapore–Indonesia corridor
-Former President Director / Country Manager, Gemalto Indonesia
-NTU FlexiMasters in Business AI & Technology — 4.8/5.0 GPA
+* COO, 180Climate — originating and structuring new forest-carbon projects: 9 originated, 4 in active fundraising
+* VP Business Development, Aserra Partners — structured Aserra–Daaz's entry into two Indonesian city-scale waste-to-energy projects
+* Former President Director / Country Manager, Gemalto Indonesia (now Thales)
+* NTU FlexiMasters in Business AI & Technology — 4.8/5.0 GPA, 2026
 
 
 Trust principles
 
 No confidential client data is published here. Public repositories use synthetic examples, public sources, or redacted templates. AI outputs are treated as draft assistance only — human review, source-checking, and auditability remain essential.
+
+I take a small number of AI deployment advisory engagements each quarter.
 
 
 Connect
