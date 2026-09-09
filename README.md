@@ -1,73 +1,93 @@
-Kian Boon (John) Teng
+# Kian Boon (John) Teng
 
-Enterprise AI: from executive intent to shipped, governed systems
+**I take enterprise AI from executive intent to production systems that hold up under scrutiny.**
 
-C-level operator · shipping governed enterprise AI · climate finance & sustainable infrastructure · Singapore–Indonesia corridor
+C-level operator · Singapore–Indonesia corridor · climate finance and sustainable infrastructure
 
-I work where business strategy meets working AI — deciding which workflows are worth building, what outcome justifies the spend, and then shipping governed systems that teams actually adopt. I bring senior operating experience and practical building fluency: I can sit with the real problem, shape the strategy, design the solution, and lead it from prototype into trusted daily use.
+Most AI projects die in the gap between a convincing demo and a system a regulated business will actually rely on. That gap is where I work. I decide which problems are worth solving, model the domain so the software cannot make a claim the domain forbids, set the evidence standard the output has to meet, and carry it through deployment and adoption.
 
+---
 
-How I approach enterprise AI
+## How I work
 
-Start from why and what. Business pain, decision bottleneck, ROI against capex/opex, build-vs-buy — settled before any model is introduced. Never over-engineer a simple process.
+**I settle the business question before any model appears.** Which decision is blocked, what the delay costs, build versus buy, and what a good answer is worth. If a rules engine and a form would do the job, I build that instead.
 
-Design for trust from day one. Bounded inputs, human-in-the-loop review, auditable evidence, explicit cost and quality gates, explainable outputs.
+**I design so the system cannot overstate.** Typed domain contracts, deterministic calculation, bounded inputs, uncertainty carried explicitly rather than rounded away, human review at defined gates, and tests that fail the build when the software makes a claim it has no standing to make.
 
-Own the last mile. Take messy, real problems through the full arc: problem → constraints → build → deployment → adoption.
+**I own the last mile.** Deployment, versioning, rollback, adoption, and the commercial line back to the business. A system nobody uses is a failed system regardless of its accuracy.
 
+---
 
-## Featured build — 180Climate
+## 180Climate — two production systems
 
-I scoped and led the build, trial and launch of two screening apps, reusing satellite data and a shared geospatial foundation for carbon pre-feasibility and EUDR plot checks. I set the timeline, budget, AI development workflow and acceptance criteria, and directed UI, report quality and deployment. My delivery responsibilities included GitHub versioning and rollback/recovery decisions.
+**[Carbon Screening](https://carbon.180climate.net)** · **[EUDR Plot Check](https://eudr.180climate.net)** — both live, serving Indonesian concession holders and commodity exporters.
 
-I coordinated Cowork planning with Claude Code in VS Code for execution and review, customising subagent roles, context and instructions with checks throughout. I used subscription-based development tools and completed the build within the timeline and budget I had set.
+I selected these problems, designed the system, and took both to launch. The decisions that shaped them were mine:
 
-**[Inspect the project](https://github.com/TengKianBoon/180climate-app#1-see-the-product): screenshot → architecture → code → tests → my contribution.**
+- **One foundation, two products.** I assessed demand on both sides of the corridor and concluded that carbon pre-feasibility and EUDR plot screening are the same geospatial question asked twice. A single typed core and shared satellite-data layer serve both, which is why two products shipped for close to the cost of one.
 
-- [Carbon Screening](https://carbon.180climate.net) — indicative quantity ranges and calculation traces.
-- [EUDR Plot Check](https://eudr.180climate.net) — per-plot detection states and preparation support.
-- [One decision function](https://github.com/TengKianBoon/180climate-app/blob/b4ac414789659bfbb56f19599a87cbe72a01a2d2/engines/eudr/triage.py#L45-L79) · [Its tests](https://github.com/TengKianBoon/180climate-app/blob/b4ac414789659bfbb56f19599a87cbe72a01a2d2/tests/test_eudr_triage.py#L50-L90) · [My contribution](https://github.com/TengKianBoon/180climate-app#5-my-contribution).
-- [Recorded CI result](https://github.com/TengKianBoon/180climate-app/actions/runs/28553478682/job/84655746161): 461 passed, 2 skipped on 1 July 2026.
-- [Versioned releases and recovery scope](https://github.com/TengKianBoon/180climate-app#6-inspect-versioning-and-recovery): published `v1.0.0` and `v1.1.0`, with links to the tagged source.
+- **The legal posture, fixed before any code existed.** EUDR output states what was detected — hectares of loss, which dataset, against the 31 December 2020 cutoff — and never returns a compliance verdict. I recorded that as **ADR-0018** and made it structural rather than editorial: the detection states are typed, and a CI test fails the build if output ever contains *compliant*, *deforestation-free* or *DDS-ready*. A marketing instinct cannot reach a user.
 
-I combined domain knowledge, solution design and AI-assisted engineering to take a defined user need through a controlled build, deployment and launch.
+- **Uncertainty as a first-class output.** Carbon results are a range with an uncertainty band and an IPCC Tier label, never a single confident number. I required the report to expose its own inputs and intermediate values so a reviewer can audit the arithmetic — recorded as **ADR-0014** and implemented as a typed calculation trace.
 
+- **The calibration trade-off, held deliberately.** A screen tuned for defensibility flags everything and nobody uses it; tuned for usability it clears plots it should not. I set the standard: watch the amber rate on real runs and tune toward green as the evidence supports it, while never letting a genuine loss render green.
 
-Selected work
+- **Distinguishing a confirmed zero from missing data.** The single decision I would put in front of a technical reviewer. Absent optical-loss data must not be read as a clean result. That distinction is enforced in the type system, not in a comment.
 
-Governed Audio Learning Pipeline — Local-first pipeline that turns spoken content (voice notes, talks, permitted recordings, phone transcripts) into governed knowledge artifacts: transcripts, quality-scored summaries, and a growing concept map. Demonstrates private-raw / public-curated separation, maker–checker review, cost gates, MCP-ready tools, and a publish gate before anything goes public.
+- **Cost and schedule.** Subscription tooling, work routed to the cheapest model that could do it, parallel streams capped, delivered inside the window and budget I set.
 
-Enterprise AI Candidate Fit & Agent Harness — Privacy-first, standalone app that scores anonymized CVs against a job description with explainable evidence, gap analysis, and recruiter-ready prompts. Built as a governance demonstration in a high-scrutiny domain: visible rubrics, human-in-the-loop, fair-hiring guardrails, no autonomous decisions.
+**On method, plainly.** I designed and ran an agent harness to implement against my specifications — role-separated writer, reviewer, verifier and test-writer sub-agents, a bounded retry budget, evidence-based handoffs, and human sign-off gates I owned. The commits are co-authored and the harness configuration is public in the repository. The problem selection, domain model, architecture, acceptance criteria, legal posture and every gate decision are mine. Directing a harness of that kind to a defensible production result is the engineering judgement I would bring to a team — not a substitute for it.
 
-AI Vendor Presentation Monitor — Config-driven pipeline that monitors official AI-vendor sources, filters for credible material, deduplicates, and prepares a digest. Conservative source policy, no media-ripping, CI and tests.
+**Inspect it end to end:** [the product](https://github.com/TengKianBoon/180climate-app#1-see-the-product) → [a meaningful piece of code](https://github.com/TengKianBoon/180climate-app#3-inspect-a-meaningful-piece-of-code) → [the tests](https://github.com/TengKianBoon/180climate-app#4-check-the-tests) → [what I contributed](https://github.com/TengKianBoon/180climate-app#5-my-contribution) → [versioning and recovery](https://github.com/TengKianBoon/180climate-app#6-inspect-versioning-and-recovery). The repository includes a runnable offline example that reproduces one real decision in under a minute, with no API key.
 
-LLM Decision Lab — A decision harness that compares multiple model answers to the same question under a project-aware rubric, runs two-pass judging and adversarial review, and routes genuinely uncertain calls to a human. A practical Outcomes → Rubrics → Graders pattern for multi-agent decision work.
+---
 
+## What a technical evaluator can check
 
-What I use GitHub for
+| Competency | Where to see it |
+|---|---|
+| Domain modelling into typed contracts (Pydantic v2) that make an invalid claim unrepresentable | [`core/contracts`](https://github.com/TengKianBoon/180climate-app/blob/b4ac414789659bfbb56f19599a87cbe72a01a2d2/core/contracts/__init__.py#L247-L276) |
+| Drawing and defending the boundary between deterministic computation and model output | [architecture](https://github.com/TengKianBoon/180climate-app#2-understand-the-architecture) |
+| Guardrails enforced as CI gates rather than policy documents | banned-claim assertion in [the test suite](https://github.com/TengKianBoon/180climate-app/blob/b4ac414789659bfbb56f19599a87cbe72a01a2d2/tests/test_eudr_triage.py) |
+| Geospatial engineering — COG pixel reads over `vsicurl`, rasterio / shapely, JRC GFC2020 + Hansen + RADD | [`engines/eudr/triage.py`](https://github.com/TengKianBoon/180climate-app/blob/b4ac414789659bfbb56f19599a87cbe72a01a2d2/engines/eudr/triage.py#L45-L79) |
+| Decision records as an architectural control, not documentation theatre | [18 ADRs](https://github.com/TengKianBoon/180climate-app/tree/main/docs/adr) |
+| Agent orchestration with separated authorship and review | [role instructions](https://github.com/TengKianBoon/180climate-app#2-understand-the-architecture) |
+| Release engineering — tagged releases, traceable source, defined rollback scope | [releases](https://github.com/TengKianBoon/180climate-app/releases) |
+| Verified test evidence | [recorded CI run](https://github.com/TengKianBoon/180climate-app/actions/runs/28553478682/job/84655746161) — 463 collected: 461 passed, 2 skipped, 1 July 2026 |
 
-* AI-enabled due-diligence and document-intelligence workflows for climate finance and infrastructure
-* Market and regulatory-intelligence automation
-* Agentic governance patterns: human approval, auditability, logging, cost and risk controls
-* Investor-grade evidence-pack templates for carbon, MRV, and ESG opportunities
-* Reusable enterprise AI app patterns: agent harnesses, rubrics, graders, memory, orchestration
+I design against the Singapore governance context I operate in: the IMDA Model AI Governance Framework, including its agentic-AI guidance, MAS FEAT principles where financial decisions are touched, and PDPA obligations on personal data.
 
+---
 
-Background
+## Selected work
 
-* COO, 180Climate — originating and structuring new forest-carbon projects: 9 originated, 4 in active fundraising
-* VP Business Development, Aserra Partners — structured Aserra–Daaz's entry into two Indonesian city-scale waste-to-energy projects
-* Former President Director / Country Manager, Gemalto Indonesia (now Thales)
-* NTU FlexiMasters in Business AI & Technology — 4.8/5.0 GPA, 2026
+**LLM Decision Lab** — I built a decision harness that puts several model answers to the same question under one project-aware rubric, runs two-pass judging and an adversarial review, and routes genuinely uncertain calls to a human instead of resolving them silently. An applied Outcomes → Rubrics → Graders pattern.
 
+**Governed Audio Learning Pipeline** — A local-first pipeline turning spoken material into governed knowledge artefacts: transcripts, quality-scored summaries and a growing concept map. I designed the private-raw / public-curated separation, maker–checker review, cost gates, and a publish gate that stands between any artefact and the outside world.
 
-Trust principles
+**AI Vendor Presentation Monitor** — A config-driven pipeline that tracks official vendor sources, filters for credible material, de-duplicates and prepares a digest, under a deliberately conservative source policy.
 
-No confidential client data is published here. Public repositories use synthetic examples, public sources, or redacted templates. AI outputs are treated as draft assistance only — human review, source-checking, and auditability remain essential.
+**Enterprise AI Candidate Fit & Agent Harness** *(private repository — walkthrough available on request)* — Scores anonymised CVs against a job description with explainable evidence and gap analysis. Built as a governance exercise in a high-scrutiny domain: visible rubrics, human-in-the-loop, fair-hiring guardrails, and no autonomous decisions.
+
+---
+
+## Background
+
+- **Co-Founder & COO, 180Climate** (Oct 2023–) — originating and structuring forest-carbon projects: 9 originated, 4 in active fundraising.
+- **VP Business Development, Aserra Partners** — structured Aserra–Daaz's entry into two Indonesian city-scale waste-to-energy projects.
+- **President Director / Country Manager, Gemalto Indonesia** (now Thales) — national-scale secure identity and transaction infrastructure.
+- **NTU FlexiMasters in Business AI & Technology** — CGPA 4.80 / 5.00, 2026.
+
+Two decades of P&L and country-management responsibility in regulated, high-consequence markets. That is the reason I build AI the way I do: I have carried the downside of a system that was wrong in production.
+
+---
+
+## How I handle AI output
+
+No confidential client data appears in these repositories. Public work uses synthetic examples, public sources or redacted templates. Model output is draft assistance until a human has checked it against a source — that rule is enforced in the systems I build, not just stated in them.
 
 I take a small number of AI deployment advisory engagements each quarter.
 
+---
 
-Connect
-
-LinkedIn: https://www.linkedin.com/in/kian-boon-teng-7aa84933/
+**[LinkedIn](https://www.linkedin.com/in/kian-boon-teng-7aa84933/)**
