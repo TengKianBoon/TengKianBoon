@@ -52,10 +52,24 @@ I selected these problems, designed the system, and took both to launch. The dec
 | Geospatial engineering — COG pixel reads over `vsicurl`, rasterio / shapely, JRC GFC2020 + Hansen + RADD | [`engines/eudr/triage.py`](https://github.com/TengKianBoon/180climate-app/blob/b4ac414789659bfbb56f19599a87cbe72a01a2d2/engines/eudr/triage.py#L45-L79) |
 | Decision records as an architectural control, not documentation theatre | [18 ADRs](https://github.com/TengKianBoon/180climate-app/tree/main/docs/adr) |
 | Agent orchestration with separated authorship and review | [role instructions](https://github.com/TengKianBoon/180climate-app#2-understand-the-architecture) |
+| Security controls enforced in the toolchain — secret scan over tool output, scoped command allowlist, destructive-operation veto | [`.claude/settings.json`](https://github.com/TengKianBoon/180climate-app/blob/main/.claude/settings.json) |
+| Scope discipline — what was deliberately deferred, published rather than hidden | [hardening roadmap](https://github.com/TengKianBoon/180climate-app/blob/b4ac414789659bfbb56f19599a87cbe72a01a2d2/docs/production-roadmap.md) |
 | Release engineering — tagged releases, traceable source, defined rollback scope | [releases](https://github.com/TengKianBoon/180climate-app/releases) |
 | Verified test evidence | [recorded CI run](https://github.com/TengKianBoon/180climate-app/actions/runs/28553478682/job/84655746161) — 463 collected: 461 passed, 2 skipped, 1 July 2026 |
 
 I design against the Singapore governance context I operate in: the IMDA Model AI Governance Framework, including its agentic-AI guidance, MAS FEAT principles where financial decisions are touched, and PDPA obligations on personal data.
+
+---
+
+## What I bring as an operator
+
+**Adoption is a design constraint, not a launch campaign.** A screen tuned so cautiously that it flags everything gets abandoned in a fortnight — that is a product failure, not a safety win. I set the usability standard alongside the rigour standard: findings written in plain language with real numbers, a free screen as the entry point to paid advisory so that usage and revenue pull in the same direction, and a deliberate watch on how often the tool returns an unhelpful *review needed*. In an enterprise seat this is the same job — getting people to actually use the thing, then keeping them using it.
+
+**Safe usage is enforced where people work, not in a policy document.** In this build that means no secrets in the repository, a secret scan over tool output, a scoped command allowlist and a veto on destructive operations — controls that hold whether or not anyone is watching. Where personal data is in scope I separate private raw material from curated output and work to PDPA obligations; the candidate-fit tool scores anonymised CVs and makes no autonomous decision. Running Gemalto Indonesia I was accountable for national-scale identity and transaction infrastructure, which is where I learned what it costs when a control exists only on paper.
+
+**I decide what not to build, and publish that decision.** I assessed demand on both sides of the corridor before committing a line of code, and cut the scope to the two questions people were actually stuck on. What I deliberately deferred — observability, abuse controls, staging, analytics — is published in the repository as a [hardening roadmap](https://github.com/TengKianBoon/180climate-app/blob/b4ac414789659bfbb56f19599a87cbe72a01a2d2/docs/production-roadmap.md) rather than left for a reviewer to discover. Knowing which corners are safe to cut, and being willing to name them in public, is most of the job.
+
+**I supervise engineers and agents with the same discipline.** A written definition of done before work starts. Review separated from authorship so nothing marks its own homework. A bounded number of attempts before the work escalates instead of failing quietly. Evidence assembled at each gate, and a named human who owns the decision. That is how I ran country teams, and it is how I ran the [sub-agents on this build](https://github.com/TengKianBoon/180climate-app#2-understand-the-architecture). The mechanics differ; the management does not. A team of agents needs what a team of engineers needs — a clear brief, an independent reviewer, and someone accountable for the call.
 
 ---
 
