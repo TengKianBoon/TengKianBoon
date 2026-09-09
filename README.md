@@ -16,9 +16,21 @@ Design for trust from day one. Bounded inputs, human-in-the-loop review, auditab
 Own the last mile. Take messy, real problems through the full arc: problem → constraints → build → deployment → adoption.
 
 
-Live systems
+## Featured build — 180Climate
 
-Carbon operations platform and EUDR compliance screener — designed and shipped at 180Climate: carbon.180climate.net · eudr.180climate.net — 463 automated tests, CI pipeline, 18 architecture decision records, human-in-the-loop gates.
+I scoped and led the build, trial and launch of two screening apps, reusing satellite data and a shared geospatial foundation for carbon pre-feasibility and EUDR plot checks. I set the timeline, budget, AI development workflow and acceptance criteria, and directed UI, report quality and deployment. My delivery responsibilities included GitHub versioning and rollback/recovery decisions.
+
+I coordinated Cowork planning with Claude Code in VS Code for execution and review, customising subagent roles, context and instructions with checks throughout. I used subscription-based development tools and completed the build within the timeline and budget I had set.
+
+**[Inspect the project](https://github.com/TengKianBoon/180climate-app#1-see-the-product): screenshot → architecture → code → tests → my contribution.**
+
+- [Carbon Screening](https://carbon.180climate.net) — indicative quantity ranges and calculation traces.
+- [EUDR Plot Check](https://eudr.180climate.net) — per-plot detection states and preparation support.
+- [One decision function](https://github.com/TengKianBoon/180climate-app/blob/b4ac414789659bfbb56f19599a87cbe72a01a2d2/engines/eudr/triage.py#L45-L79) · [Its tests](https://github.com/TengKianBoon/180climate-app/blob/b4ac414789659bfbb56f19599a87cbe72a01a2d2/tests/test_eudr_triage.py#L50-L90) · [My contribution](https://github.com/TengKianBoon/180climate-app#5-my-contribution).
+- [Recorded CI result](https://github.com/TengKianBoon/180climate-app/actions/runs/28553478682/job/84655746161): 461 passed, 2 skipped on 1 July 2026.
+- [Versioned releases and recovery scope](https://github.com/TengKianBoon/180climate-app#6-inspect-versioning-and-recovery): published `v1.0.0` and `v1.1.0`, with links to the tagged source.
+
+I combined domain knowledge, solution design and AI-assisted engineering to take a defined user need through a controlled build, deployment and launch.
 
 
 Selected work
