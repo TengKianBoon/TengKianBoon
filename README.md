@@ -18,13 +18,15 @@ Most AI projects die in the gap between a convincing demo and a system a regulat
 
 ---
 
-## 180Climate — two production systems
+## 180Climate — two production tools and one live invited pilot
 
-**[Carbon Screening](https://carbon.180climate.net)** · **[EUDR Plot Check](https://eudr.180climate.net)** — both live, serving Indonesian concession holders and commodity exporters.
+**[Carbon Screening](https://carbon.180climate.net)** · **[EUDR Plot Check](https://eudr.180climate.net)** — both live, serving Indonesian concession holders and commodity exporters. **[Fieldwork Network](https://one80climate-fieldwork-preview.onrender.com/fieldwork)** is a live, work-in-progress invited pilot that connects real project needs to a privately reviewed Wix intake; it does not dispatch workers, approve access, form contracts or process payments.
 
 I selected these problems, designed the system, and took both to launch. The decisions that shaped them were mine:
 
 - **One foundation, two products.** I assessed demand on both sides of the corridor and concluded that carbon pre-feasibility and EUDR plot screening are the same geospatial question asked twice. A single typed core and shared satellite-data layer serve both, which is why two products shipped for close to the cost of one.
+
+- **A field workflow added without pretending it is a marketplace.** I mapped the requester, provider and operator journey; reused the existing Wix, Render and GitHub estate; and launched the smallest manually reviewed pilot before investing in dispatch, contracting or payment automation. The repository records the public/private data boundary and the evidence required before expanding the service.
 
 - **The legal posture, fixed before any code existed.** EUDR output states what was detected — hectares of loss, which dataset, against the 31 December 2020 cutoff — and never returns a compliance verdict. I recorded that as **ADR-0018** and made it structural rather than editorial: the detection states are typed, and a CI test fails the build if output ever contains *compliant*, *deforestation-free* or *DDS-ready*. A marketing instinct cannot reach a user.
 
@@ -38,7 +40,7 @@ I selected these problems, designed the system, and took both to launch. The dec
 
 **On method, plainly.** I designed and ran an agent harness to implement against my specifications — role-separated writer, reviewer, verifier and test-writer sub-agents, a bounded retry budget, evidence-based handoffs, and human sign-off gates I owned. The commits are co-authored and the harness configuration is public in the repository. The problem selection, domain model, architecture, acceptance criteria, legal posture and every gate decision are mine. Directing a harness of that kind to a defensible production result is the engineering judgement I would bring to a team — not a substitute for it.
 
-**Inspect it end to end:** [the product](https://github.com/TengKianBoon/180climate-app#1-see-the-product) → [a meaningful piece of code](https://github.com/TengKianBoon/180climate-app#3-inspect-a-meaningful-piece-of-code) → [the tests](https://github.com/TengKianBoon/180climate-app#4-check-the-tests) → [what I contributed](https://github.com/TengKianBoon/180climate-app#5-my-contribution) → [versioning and recovery](https://github.com/TengKianBoon/180climate-app#6-inspect-versioning-and-recovery). The repository includes a runnable offline example that reproduces one real decision in under a minute, with no API key.
+**Inspect it end to end:** [the product](https://github.com/TengKianBoon/180climate-app#1-see-the-product) → [a meaningful piece of code](https://github.com/TengKianBoon/180climate-app#3-inspect-a-meaningful-piece-of-code) → [the tests](https://github.com/TengKianBoon/180climate-app#4-check-the-tests) → [what I contributed](https://github.com/TengKianBoon/180climate-app#5-my-contribution) → [versioning and recovery](https://github.com/TengKianBoon/180climate-app#6-inspect-versioning-and-recovery). The repository includes a runnable offline example that reproduces one real decision in under a minute, with no API key, plus an [evidence-linked enterprise AI delivery case study](https://github.com/TengKianBoon/180climate-app/blob/main/docs/260911_enterprise_ai_delivery_case_study.md).
 
 ---
 
@@ -52,6 +54,11 @@ I selected these problems, designed the system, and took both to launch. The dec
 | Geospatial engineering — COG pixel reads over `vsicurl`, rasterio / shapely, JRC GFC2020 + Hansen + RADD | [`engines/eudr/triage.py`](https://github.com/TengKianBoon/180climate-app/blob/b4ac414789659bfbb56f19599a87cbe72a01a2d2/engines/eudr/triage.py#L45-L79) |
 | Decision records as an architectural control, not documentation theatre | [18 ADRs](https://github.com/TengKianBoon/180climate-app/tree/main/docs/adr) |
 | Agent orchestration with separated authorship and review | [role instructions](https://github.com/TengKianBoon/180climate-app#2-understand-the-architecture) |
+| Solution architecture from business discovery through data, integration, security, governance and deployment boundaries | [enterprise AI delivery case study](https://github.com/TengKianBoon/180climate-app/blob/main/docs/260911_enterprise_ai_delivery_case_study.md#solution-architecture-evidence) |
+| Forward-deployed execution across the actual Wix, GitHub and Render environment, including responsive UI, API, persistence, tests and live-workflow correction | [FDE and full-stack evidence](https://github.com/TengKianBoon/180climate-app/blob/main/docs/260911_enterprise_ai_delivery_case_study.md#forward-deployed-and-full-stack-engineering-evidence) |
+| Hands-on AI delivery: task decomposition, role-separated agents, model/cost routing, deterministic-versus-model boundaries and human approval gates | [personal contribution versus AI assistance](https://github.com/TengKianBoon/180climate-app#5-my-contribution) |
+| Adoption leadership through a bounded invited pilot, bilingual guidance, manual fallback, proof targets and stop/go criteria | [adoption evidence](https://github.com/TengKianBoon/180climate-app/blob/main/docs/260911_enterprise_ai_delivery_case_study.md#enterprise-ai-adoption-leadership) |
+| Evidence being built toward AIRI Level 4 capabilities, with the unproven maturity and ecosystem gaps stated explicitly | [AIRI Level 4 direction and gaps](https://github.com/TengKianBoon/180climate-app/blob/main/docs/260911_enterprise_ai_delivery_case_study.md#airi-level-4-direction) |
 | Security controls enforced in the toolchain — secret scan over tool output, scoped command allowlist, destructive-operation veto | [`.claude/settings.json`](https://github.com/TengKianBoon/180climate-app/blob/main/.claude/settings.json) |
 | Scope discipline — what was deliberately deferred, published rather than hidden | [hardening roadmap](https://github.com/TengKianBoon/180climate-app/blob/b4ac414789659bfbb56f19599a87cbe72a01a2d2/docs/production-roadmap.md) |
 | Release engineering — tagged releases, traceable source, defined rollback scope | [releases](https://github.com/TengKianBoon/180climate-app/releases) |
@@ -81,7 +88,7 @@ I design against the Singapore governance context I operate in: the IMDA Model A
 
 **AI Vendor Presentation Monitor** — A config-driven pipeline that tracks official vendor sources, filters for credible material, de-duplicates and prepares a digest, under a deliberately conservative source policy.
 
-**Enterprise AI Candidate Fit & Agent Harness** *(private repository — walkthrough available on request)* — Scores anonymised CVs against a job description with explainable evidence and gap analysis. Built as a governance exercise in a high-scrutiny domain: visible rubrics, human-in-the-loop, fair-hiring guardrails, and no autonomous decisions.
+**[Enterprise AI Candidate Fit & Agent Harness](candidate-fit-showcase/)** *(public static showcase; broader working materials remain private)* — Scores anonymised CVs against a job description with explainable evidence and gap analysis. Built as a governance exercise in a high-scrutiny domain: visible rubrics, human-in-the-loop, fair-hiring guardrails, and no autonomous decisions. The public demo is deterministic and browser-side; it is not represented as a live model service.
 
 ---
 
