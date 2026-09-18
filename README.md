@@ -1,8 +1,8 @@
 # Kian Boon (John) Teng
 
-**C-level operator** · Green infrastructure · Enterprise AI · Nature-based carbon & climate finance · Singapore–Indonesia
+**C-level operator shipping governed enterprise AI** · Green infrastructure · Nature-based carbon & climate finance · Singapore–Indonesia
 
-I build and run businesses where green capital, physical assets and AI meet, and I put AI to work where the numbers have to stand up in front of investors and regulators.
+I take enterprise AI from executive intent to governed systems that hold up in front of investors and regulators, and I run the businesses that need it: green infrastructure, energy transition and nature-based carbon across Singapore and Indonesia.
 
 ---
 
