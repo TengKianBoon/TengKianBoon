@@ -1,114 +1,47 @@
 # Kian Boon (John) Teng
 
-**I take enterprise AI from executive intent to production systems that hold up under scrutiny.**
+**C-level operator** · Green infrastructure · Enterprise AI · Nature-based carbon & climate finance · Singapore–Indonesia
 
-C-level operator · Singapore–Indonesia corridor · climate finance and sustainable infrastructure
-
-Most AI projects die in the gap between a convincing demo and a system a regulated business will actually rely on. That gap is where I work. I decide which problems are worth solving, model the domain so the software cannot make a claim the domain forbids, set the evidence standard the output has to meet, and carry it through deployment and adoption.
+I build and run businesses where green capital, physical assets and AI meet, and I put AI to work where the numbers have to stand up in front of investors and regulators.
 
 ---
 
-## How I work
+## Built and launched
 
-**I settle the business question before any model appears.** Which decision is blocked, what the delay costs, build versus buy, and what a good answer is worth. If a rules engine and a form would do the job, I build that instead.
+Three free entry points into 180Climate's origination pipeline. Forest owners, exporters and project developers get a fast, useful answer, and we start the conversation.
 
-**I design so the system cannot overstate.** Typed domain contracts, deterministic calculation, bounded inputs, uncertainty carried explicitly rather than rounded away, human review at defined gates, and tests that fail the build when the software makes a claim it has no standing to make.
-
-**I own the last mile.** Deployment, versioning, rollback, adoption, and the commercial line back to the business. A system nobody uses is a failed system regardless of its accuracy.
-
----
-
-## 180Climate — two production tools and one live invited pilot
-
-**[Carbon Screening](https://carbon.180climate.net)** · **[EUDR Plot Check](https://eudr.180climate.net)** — both live, serving Indonesian concession holders and commodity exporters. **[Fieldwork Network](https://one80climate-fieldwork-preview.onrender.com/fieldwork)** is a live, work-in-progress invited pilot that connects real project needs to a privately reviewed Wix intake; it does not dispatch workers, approve access, form contracts or process payments.
-
-I selected these problems, designed the system, and took both to launch. The decisions that shaped them were mine:
-
-- **One foundation, two products.** I assessed demand on both sides of the corridor and concluded that carbon pre-feasibility and EUDR plot screening are the same geospatial question asked twice. A single typed core and shared satellite-data layer serve both, which is why two products shipped for close to the cost of one.
-
-- **A field workflow added without pretending it is a marketplace.** I mapped the requester, provider and operator journey; reused the existing Wix, Render and GitHub estate; and launched the smallest manually reviewed pilot before investing in dispatch, contracting or payment automation. The repository records the public/private data boundary and the evidence required before expanding the service.
-
-- **The legal posture, fixed before any code existed.** EUDR output states what was detected — hectares of loss, which dataset, against the 31 December 2020 cutoff — and never returns a compliance verdict. I recorded that as **ADR-0018** and made it structural rather than editorial: the detection states are typed, and a CI test fails the build if output ever contains *compliant*, *deforestation-free* or *DDS-ready*. A marketing instinct cannot reach a user.
-
-- **Uncertainty as a first-class output.** Carbon results are a range with an uncertainty band and an IPCC Tier label, never a single confident number. I required the report to expose its own inputs and intermediate values so a reviewer can audit the arithmetic — recorded as **ADR-0014** and implemented as a typed calculation trace.
-
-- **The calibration trade-off, held deliberately.** A screen tuned for defensibility flags everything and nobody uses it; tuned for usability it clears plots it should not. I set the standard: watch the amber rate on real runs and tune toward green as the evidence supports it, while never letting a genuine loss render green.
-
-- **Distinguishing a confirmed zero from missing data.** The single decision I would put in front of a technical reviewer. Absent optical-loss data must not be read as a clean result. That distinction is enforced in the type system, not in a comment.
-
-- **Cost and schedule.** Subscription tooling, work routed to the cheapest model that could do it, parallel streams capped, delivered inside the window and budget I set.
-
-**On method, plainly.** I designed and ran an agent harness to implement against my specifications — role-separated writer, reviewer, verifier and test-writer sub-agents, a bounded retry budget, evidence-based handoffs, and human sign-off gates I owned. The commits are co-authored and the harness configuration is public in the repository. The problem selection, domain model, architecture, acceptance criteria, legal posture and every gate decision are mine. Directing a harness of that kind to a defensible production result is the engineering judgement I would bring to a team — not a substitute for it.
-
-**Inspect it end to end:** [the product](https://github.com/TengKianBoon/180climate-app#1-see-the-product) → [a meaningful piece of code](https://github.com/TengKianBoon/180climate-app#3-inspect-a-meaningful-piece-of-code) → [the tests](https://github.com/TengKianBoon/180climate-app#4-check-the-tests) → [what I contributed](https://github.com/TengKianBoon/180climate-app#5-my-contribution) → [versioning and recovery](https://github.com/TengKianBoon/180climate-app#6-inspect-versioning-and-recovery). The repository includes a runnable offline example that reproduces one real decision in under a minute, with no API key, plus an [evidence-linked enterprise AI delivery case study](https://github.com/TengKianBoon/180climate-app/blob/main/docs/260911_enterprise_ai_delivery_case_study.md).
-
----
-
-## What a technical evaluator can check
-
-| Competency | Where to see it |
+| Tool | What it does |
 |---|---|
-| Domain modelling into typed contracts (Pydantic v2) that make an invalid claim unrepresentable | [`core/contracts`](https://github.com/TengKianBoon/180climate-app/blob/b4ac414789659bfbb56f19599a87cbe72a01a2d2/core/contracts/__init__.py#L247-L276) |
-| Drawing and defending the boundary between deterministic computation and model output | [architecture](https://github.com/TengKianBoon/180climate-app#2-understand-the-architecture) |
-| Guardrails enforced as CI gates rather than policy documents | banned-claim assertion in [the test suite](https://github.com/TengKianBoon/180climate-app/blob/b4ac414789659bfbb56f19599a87cbe72a01a2d2/tests/test_eudr_triage.py) |
-| Geospatial engineering — COG pixel reads over `vsicurl`, rasterio / shapely, JRC GFC2020 + Hansen + RADD | [`engines/eudr/triage.py`](https://github.com/TengKianBoon/180climate-app/blob/b4ac414789659bfbb56f19599a87cbe72a01a2d2/engines/eudr/triage.py#L45-L79) |
-| Decision records as an architectural control, not documentation theatre | [18 ADRs](https://github.com/TengKianBoon/180climate-app/tree/main/docs/adr) |
-| Agent orchestration with separated authorship and review | [role instructions](https://github.com/TengKianBoon/180climate-app#2-understand-the-architecture) |
-| Solution architecture from business discovery through data, integration, security, governance and deployment boundaries | [enterprise AI delivery case study](https://github.com/TengKianBoon/180climate-app/blob/main/docs/260911_enterprise_ai_delivery_case_study.md#solution-architecture-evidence) |
-| Forward-deployed execution across the actual Wix, GitHub and Render environment, including responsive UI, API, persistence, tests and live-workflow correction | [FDE and full-stack evidence](https://github.com/TengKianBoon/180climate-app/blob/main/docs/260911_enterprise_ai_delivery_case_study.md#forward-deployed-and-full-stack-engineering-evidence) |
-| Hands-on AI delivery: task decomposition, role-separated agents, model/cost routing, deterministic-versus-model boundaries and human approval gates | [personal contribution versus AI assistance](https://github.com/TengKianBoon/180climate-app#5-my-contribution) |
-| Adoption leadership through a bounded invited pilot, bilingual guidance, manual fallback, proof targets and stop/go criteria | [adoption evidence](https://github.com/TengKianBoon/180climate-app/blob/main/docs/260911_enterprise_ai_delivery_case_study.md#enterprise-ai-adoption-leadership) |
-| Evidence being built toward AIRI Level 4 capabilities, with the unproven maturity and ecosystem gaps stated explicitly | [AIRI Level 4 direction and gaps](https://github.com/TengKianBoon/180climate-app/blob/main/docs/260911_enterprise_ai_delivery_case_study.md#airi-level-4-direction) |
-| Security controls enforced in the toolchain — secret scan over tool output, scoped command allowlist, destructive-operation veto | [`.claude/settings.json`](https://github.com/TengKianBoon/180climate-app/blob/main/.claude/settings.json) |
-| Scope discipline — what was deliberately deferred, published rather than hidden | [hardening roadmap](https://github.com/TengKianBoon/180climate-app/blob/b4ac414789659bfbb56f19599a87cbe72a01a2d2/docs/production-roadmap.md) |
-| Release engineering — tagged releases, traceable source, defined rollback scope | [releases](https://github.com/TengKianBoon/180climate-app/releases) |
-| Verified test evidence | [recorded CI run](https://github.com/TengKianBoon/180climate-app/actions/runs/28553478682/job/84655746161) — 463 collected: 461 passed, 2 skipped, 1 July 2026 |
+| **[Carbon Pre-Feasibility Screening](https://carbon.180climate.net)** | Turns a costly, weeks-long first-stage carbon study into a free screen that runs in minutes: an indicative credit range with an IPCC Tier label, a forest-loss map and an auto-routed methodology for Indonesian concession holders. |
+| **[EUDR Plot Check](https://eudr.180climate.net)** | Screens export plots of palm oil, rubber, timber, cocoa and coffee against the EU's own JRC forest baseline plus global satellite loss and radar alerts, with findings in hectares and a geolocation pack for due-diligence statements. |
+| **[Fieldwork Network](https://one80climate-fieldwork-preview.onrender.com/fieldwork)** | An invite-only network connecting project developers with qualified field practitioners across Indonesia, starting with a free trial. |
 
-I design against the Singapore governance context I operate in: the IMDA Model AI Governance Framework, including its agentic-AI guidance, MAS FEAT principles where financial decisions are touched, and PDPA obligations on personal data.
+Source, architecture and decision records: **[180climate-app](https://github.com/TengKianBoon/180climate-app)**
 
----
+## How I build
 
-## What I bring as an operator
+- **One foundation, two products.** Carbon screening and EUDR plot checks are the same geospatial question asked twice, so both run on one typed core and one satellite-data layer: two products for close to the cost of one.
+- **Every number traceable.** Deterministic calculation engines, uncertainty carried as a range, and a calculation trace that shows every input and intermediate value.
+- **Guardrails in the build, not the brochure.** The type system and CI block an unsupported claim before it can ship.
+- **I direct the agents and own the calls.** I designed and run a role-separated agent harness (writer, reviewer, verifier, test-writer) that builds against my specifications. I set the architecture, the acceptance criteria and every release gate. Concept to launch in weeks.
+- **Governance by design.** Designed in line with the IMDA Model AI Governance Framework (including its agentic-AI guidance), MAS FEAT where financial decisions are touched, and PDPA.
 
-**Adoption is a design constraint, not a launch campaign.** A screen tuned so cautiously that it flags everything gets abandoned in a fortnight — that is a product failure, not a safety win. I set the usability standard alongside the rigour standard: findings written in plain language with real numbers, a free screen as the entry point to paid advisory so that usage and revenue pull in the same direction, and a deliberate watch on how often the tool returns an unhelpful *review needed*. In an enterprise seat this is the same job — getting people to actually use the thing, then keeping them using it.
+**Under the hood:** [architecture](https://github.com/TengKianBoon/180climate-app#2-understand-the-architecture) · [18 decision records](https://github.com/TengKianBoon/180climate-app/tree/main/docs/adr) · [460+ automated tests](https://github.com/TengKianBoon/180climate-app/actions/runs/28553478682/job/84655746161) · [agent roles](https://github.com/TengKianBoon/180climate-app#how-i-orchestrated-development) · [tagged releases](https://github.com/TengKianBoon/180climate-app/releases)
 
-**Safe usage is enforced where people work, not in a policy document.** In this build that means no secrets in the repository, a secret scan over tool output, a scoped command allowlist and a veto on destructive operations — controls that hold whether or not anyone is watching. Where personal data is in scope I separate private raw material from curated output and work to PDPA obligations; the candidate-fit tool scores anonymised CVs and makes no autonomous decision. Running Gemalto Indonesia I was accountable for national-scale identity and transaction infrastructure, which is where I learned what it costs when a control exists only on paper.
+## Also building
 
-**I decide what not to build, and publish that decision.** I assessed demand on both sides of the corridor before committing a line of code, and cut the scope to the two questions people were actually stuck on. What I deliberately deferred — observability, abuse controls, staging, analytics — is published in the repository as a [hardening roadmap](https://github.com/TengKianBoon/180climate-app/blob/b4ac414789659bfbb56f19599a87cbe72a01a2d2/docs/production-roadmap.md) rather than left for a reviewer to discover. Knowing which corners are safe to cut, and being willing to name them in public, is most of the job.
+- **[LLM Decision Lab](https://github.com/TengKianBoon/llm-decision-lab)**: puts four models' answers to one question under a single rubric, with two-pass judging, adversarial review and human escalation for close calls.
+- **[Governed Audio Learning Pipeline](https://github.com/TengKianBoon/governed-audio-learning-pipeline)**: turns spoken material into governed knowledge (transcripts, quality-scored summaries and a growing concept map), with a publish gate between private raw material and public output.
+- **[AI Vendor Monitor](https://github.com/TengKianBoon/ai-vendor-presentation-monitor)**: tracks official AI-vendor sources and distils them into a curated digest.
 
-**I supervise engineers and agents with the same discipline.** A written definition of done before work starts. Review separated from authorship so nothing marks its own homework. A bounded number of attempts before the work escalates instead of failing quietly. Evidence assembled at each gate, and a named human who owns the decision. That is how I ran country teams, and it is how I ran the [sub-agents on this build](https://github.com/TengKianBoon/180climate-app#2-understand-the-architecture). The mechanics differ; the management does not. A team of agents needs what a team of engineers needs — a clear brief, an independent reviewer, and someone accountable for the call.
+## Leadership
 
----
+- **Co-Founder & COO, 180Climate** (2023–): nature-based carbon origination and structuring, with a four-site REDD+ and IFM portfolio across Riau and Kalimantan.
+- **VP Business Development, Aserra Partners** (2022–): waste-to-energy consortium facilitation and electric heavy-haulage in Indonesia.
+- **Chief Operating & Commercial Officer, PT Ocean Metal Indo** (2011–2023): took a regulated 11,260-hectare industrial asset from greenfield through production, including a managed divestiture process.
+- **President Director & Country Manager, Gemalto Indonesia** (now Thales): government-tender consortia for national eID and ePassport programmes; earlier, Oracle E-Business Suite solutioning and solution architecture for Fortune-500 clients.
+- **NTU FlexiMasters in Business AI and Technology**: CGPA 4.80/5.00 (A+, A+, A, A−, A−).
 
-## Selected work
+Always happy to compare notes.
 
-**LLM Decision Lab** — I built a decision harness that puts several model answers to the same question under one project-aware rubric, runs two-pass judging and an adversarial review, and routes genuinely uncertain calls to a human instead of resolving them silently. An applied Outcomes → Rubrics → Graders pattern.
-
-**Governed Audio Learning Pipeline** — A local-first pipeline turning spoken material into governed knowledge artefacts: transcripts, quality-scored summaries and a growing concept map. I designed the private-raw / public-curated separation, maker–checker review, cost gates, and a publish gate that stands between any artefact and the outside world.
-
-**AI Vendor Presentation Monitor** — A config-driven pipeline that tracks official vendor sources, filters for credible material, de-duplicates and prepares a digest, under a deliberately conservative source policy.
-
-**[Enterprise AI Candidate Fit & Agent Harness](candidate-fit-showcase/)** *(public static showcase; broader working materials remain private)* — Scores anonymised CVs against a job description with explainable evidence and gap analysis. Built as a governance exercise in a high-scrutiny domain: visible rubrics, human-in-the-loop, fair-hiring guardrails, and no autonomous decisions. The public demo is deterministic and browser-side; it is not represented as a live model service.
-
----
-
-## Background
-
-- **Co-Founder & COO, 180Climate** (Oct 2023–) — originating and structuring forest-carbon projects: 9 originated, 4 in active fundraising.
-- **VP Business Development, Aserra Partners** — structured Aserra–Daaz's entry into two Indonesian city-scale waste-to-energy projects.
-- **President Director / Country Manager, Gemalto Indonesia** (now Thales) — national-scale secure identity and transaction infrastructure.
-- **NTU FlexiMasters in Business AI & Technology** — CGPA 4.80 / 5.00, 2026.
-
-Two decades of P&L and country-management responsibility in regulated, high-consequence markets. That is the reason I build AI the way I do: I have carried the downside of a system that was wrong in production.
-
----
-
-## How I handle AI output
-
-No confidential client data appears in these repositories. Public work uses synthetic examples, public sources or redacted templates. Model output is draft assistance until a human has checked it against a source — that rule is enforced in the systems I build, not just stated in them.
-
-I take a small number of AI deployment advisory engagements each quarter.
-
----
-
-**[LinkedIn](https://www.linkedin.com/in/kian-boon-teng-7aa84933/)**
+**[LinkedIn](https://www.linkedin.com/in/kian-boon-teng-7aa84933/)** · **[180climate.net](https://www.180climate.net)**
