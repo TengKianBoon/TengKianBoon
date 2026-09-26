@@ -1,12 +1,10 @@
 # Kian Boon (John) Teng
 
+**AI solutions and transformation leader** · Product strategy · Solution architecture · Governed delivery · Singapore–Indonesia
 
-**C-level operator shipping governed enterprise AI** · Green infrastructure · Nature-based carbon & climate finance · Singapore–Indonesia
+I connect business priorities to AI product direction, solution architecture and governed delivery, drawing on 25+ years of enterprise technology and operating leadership across Singapore and Indonesia.
 
-
-I take enterprise AI from executive intent to governed systems that hold up in front of investors and regulators, and I run the businesses that need it: green infrastructure, energy transition and nature-based carbon across Singapore and Indonesia.
-
-At 180Climate, an affiliated PT Global Alam Lestari forest project has been recognised as a Natural Climate Solutions Lighthouse and received an A rating from BeZero Carbon.
+At 180Climate, I direct product requirements, architecture and release decisions, and coordinate commercial preparation and partners for Indonesian forest-carbon opportunities.
 
 
 ---
@@ -14,15 +12,14 @@ At 180Climate, an affiliated PT Global Alam Lestari forest project has been reco
 
 ## Built and launched
 
-
-Three free entry points into 180Climate's origination pipeline. Forest owners, exporters and project developers get a fast, useful answer, and we start the conversation.
+Three applications turn climate and fieldwork questions into practical tools for forest owners, exporters and project developers.
 
 
 | Tool | What it does |
 |---|---|
-| **[Carbon Pre-Feasibility Screening](https://carbon.180climate.net)** | Turns a costly, weeks-long first-stage carbon study into a free screen that runs in minutes: an indicative credit range with an IPCC Tier label, a forest-loss map and an auto-routed methodology for Indonesian concession holders. |
+| **[Carbon Pre-Feasibility Screening](https://carbon.180climate.net)** | Provides a free first screen in minutes: an indicative credit range with an IPCC Tier label, a forest-loss map and an auto-routed methodology for Indonesian concession holders. |
 | **[EUDR Plot Check](https://eudr.180climate.net)** | Screens export plots of palm oil, rubber, timber, cocoa and coffee against the EU's own JRC forest baseline plus global satellite loss and radar alerts, with findings in hectares and a geolocation pack for due-diligence statements. |
-| **[Fieldwork Network](https://one80climate-fieldwork-preview.onrender.com/fieldwork)** | An invite-only network connecting project developers with qualified field practitioners across Indonesia, starting with a free trial. |
+| **[Fieldwork Network](https://one80climate-fieldwork-preview.onrender.com/fieldwork)** | An invited pilot connecting project needs with qualified field practitioners across Indonesia through private intake and human review. |
 
 
 Source, architecture and decision records: **[180climate-app](https://github.com/TengKianBoon/180climate-app)**
@@ -31,11 +28,11 @@ Source, architecture and decision records: **[180climate-app](https://github.com
 ## How I build
 
 
-- **One foundation, two products.** Carbon screening and EUDR plot checks are the same geospatial question asked twice, so both run on one typed core and one satellite-data layer: two products for close to the cost of one.
-- **Every number traceable.** Deterministic calculation engines, uncertainty carried as a range, and a calculation trace that shows every input and intermediate value.
-- **Guardrails in the build, not the brochure.** The type system and CI block an unsupported claim before it can ship.
+- **One foundation, two products.** Carbon screening and EUDR plot checks share a typed geospatial core and satellite-data layer, reusing tested calculations across both applications.
+- **Traceable calculations.** Deterministic calculation engines, uncertainty carried as a range, and a calculation trace that shows every input and intermediate value.
+- **Evidence built in.** Typed contracts, tests and CI checks make inputs, methods and results reviewable.
 - **I direct the agents and own the calls.** I designed and run a role-separated agent harness (writer, reviewer, verifier, test-writer) that builds against my specifications. I set the architecture, the acceptance criteria and every release gate. Concept to launch in weeks.
-- **Governance by design.** Designed in line with the IMDA Model AI Governance Framework (including its agentic-AI guidance), MAS FEAT where financial decisions are touched, and PDPA.
+- **Governance by design.** Traceable calculations, human review and release gates support reliable AI-assisted delivery.
 
 
 **Under the hood:** [architecture](https://github.com/TengKianBoon/180climate-app#2-understand-the-architecture) · [18 decision records](https://github.com/TengKianBoon/180climate-app/tree/main/docs/adr) · [460+ automated tests](https://github.com/TengKianBoon/180climate-app/actions/runs/28553478682/job/84655746161) · [agent roles](https://github.com/TengKianBoon/180climate-app#how-i-orchestrated-development) · [tagged releases](https://github.com/TengKianBoon/180climate-app/releases)
@@ -52,7 +49,7 @@ Source, architecture and decision records: **[180climate-app](https://github.com
 ## Leadership
 
 
-- **Co-Founder & COO, 180Climate** (2023–): nature-based carbon origination and structuring, with a four-site REDD+ and IFM portfolio across Riau and Kalimantan.
+- **Co-Founder & COO, 180Climate** (2023–): nature-based carbon origination and structuring across Riau and Kalimantan, alongside product direction for three 180Climate applications.
 - **VP Business Development, Aserra Partners** (2022–): waste-to-energy consortium facilitation and electric heavy-haulage in Indonesia.
 - **Chief Operating & Commercial Officer, PT Ocean Metal Indo** (2011–2023): took a regulated 11,260-hectare industrial asset from greenfield through production, including a managed divestiture process.
 - **President Director & Country Manager, Gemalto Indonesia** (now Thales): government-tender consortia for national eID and ePassport programmes; earlier, Oracle E-Business Suite solutioning and solution architecture for Fortune-500 clients.
