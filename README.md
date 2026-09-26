@@ -31,7 +31,7 @@ Source, architecture and decision records: **[180climate-app](https://github.com
 - **One foundation, two products.** Carbon screening and EUDR plot checks share a typed geospatial core and satellite-data layer, reusing tested calculations across both applications.
 - **Traceable calculations.** Deterministic calculation engines, uncertainty carried as a range, and a calculation trace that shows every input and intermediate value.
 - **Evidence built in.** Typed contracts, tests and CI checks make inputs, methods and results reviewable.
-- **I direct the agents and own the calls.** I designed and run a role-separated agent harness (writer, reviewer, verifier, test-writer) that builds against my specifications. I set the architecture, the acceptance criteria and every release gate. Concept to launch in weeks.
+- **AI-assisted product delivery.** I designed a role-separated agent workflow for implementation, review, verification and tests. I set product requirements, architecture and acceptance criteria, then review evidence before release.
 - **Governance by design.** Traceable calculations, human review and release gates support reliable AI-assisted delivery.
 
 
