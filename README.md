@@ -2,25 +2,13 @@
 
 **AI solutions and business transformation executive** · Commercial strategy · Solution architecture · AI adoption · Singapore–Indonesia
 
-I connect business plans, financial models and operating priorities to useful AI-assisted solutions. My 25+ years span enterprise technology, country leadership and regulated operations. At 180Climate, I apply that experience to nature-based carbon development and digital tools built around real project and due-diligence workflows.
+I connect business plans, financial models and operating priorities to useful AI-assisted solutions. My 25+ years span enterprise technology, country leadership and regulated operations. At 180Climate, I direct AI-assisted products built around real project and due-diligence workflows, alongside nature-based project development and commercial financing.
 
 ## From business case to adopted solution
 
 I start with the commercial question: which process should change, where AI adds value, what investment case supports it, and what will make the solution useful to the people expected to use it. I turn those choices into requirements, architecture, build/buy/partner decisions, delivery priorities and adoption pathways. Governance, security, privacy, human review and trust shape the design and release gates.
 
 At 180Climate, I direct two live screening applications and an invited Fieldwork pilot. I set product requirements, architecture decisions, acceptance criteria and release gates; the repositories below show the resulting code, decision records and tests.
-
-## Nature-based carbon origination and climate finance
-
-
-I lead screening, fundraising strategy and partner coordination for four direct REDD+/IFM development opportunities across Riau and Kalimantan. I developed a nature-based carbon commercial model spanning phased project capital, landholder and community economics, investor returns and offtake pathways. Three forest projects in this work have Verra project IDs.
-
-
-180Climate is affiliated with PT Global Alam Lestari. Its VCS/CCB-certified project has been recognised as a Natural Climate Solutions Lighthouse and rated A by BeZero Carbon. This operating foundation informs my approach to project screening, commercial design and practical climate technology.
-
-
----
-
 
 ## Built and launched
 
@@ -51,6 +39,18 @@ Source, architecture and decision records: **[180climate-app](https://github.com
 **Under the hood:** [architecture](https://github.com/TengKianBoon/180climate-app#2-understand-the-architecture) · [18 decision records](https://github.com/TengKianBoon/180climate-app/tree/main/docs/adr) · [460+ automated tests](https://github.com/TengKianBoon/180climate-app/actions/runs/28553478682/job/84655746161) · [agent roles](https://github.com/TengKianBoon/180climate-app#how-i-orchestrated-development) · [tagged releases](https://github.com/TengKianBoon/180climate-app/releases)
 
 
+## Nature-based carbon origination and climate finance
+
+
+I lead screening, fundraising strategy and partner coordination for four direct REDD+/IFM development opportunities across Riau and Kalimantan. I developed a nature-based carbon commercial model spanning phased project capital, landholder and community economics, investor returns and offtake pathways. Three forest projects in this work have Verra project IDs.
+
+
+180Climate is affiliated with PT Global Alam Lestari. Its VCS/CCB-certified project has been recognised as a Natural Climate Solutions Lighthouse and rated A by BeZero Carbon. This operating foundation informs my approach to project screening, commercial design and practical climate technology.
+
+
+---
+
+
 ## Also building
 
 
@@ -62,7 +62,7 @@ Source, architecture and decision records: **[180climate-app](https://github.com
 ## Leadership
 
 
-- **Co-Founder & COO, 180Climate** (2023–): nature-based carbon origination, commercial modelling and fundraising strategy across Riau and Kalimantan, alongside product direction for three 180Climate applications.
+- **Co-Founder & COO, 180Climate** (2023–): product direction for three AI-assisted applications, alongside nature-based carbon origination, commercial modelling and fundraising strategy across Riau and Kalimantan.
 - **VP Business Development, Aserra Partners** (2022–): waste-to-energy consortium facilitation and electric heavy-haulage in Indonesia.
 - **Chief Operating & Commercial Officer, PT Ocean Metal Indo** (2011–2023): took a regulated 11,260-hectare industrial asset from greenfield through production, including a managed divestiture process.
 - **President Director & Country Manager, Gemalto Indonesia** (now Thales): government-tender consortia for national eID and ePassport programmes; earlier, Oracle E-Business Suite solutioning and solution architecture for Fortune-500 clients.
