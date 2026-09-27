@@ -6,7 +6,7 @@ I connect business priorities to AI products and climate project development, dr
 
 At 180Climate, I lead nature-based carbon origination, commercial and financing strategy, partner coordination, and AI product direction. The digital tools below grow from real project-development needs.
 
-## Forest-carbon origination and climate finance
+## Nature-based carbon origination and climate finance
 
 I lead screening, fundraising strategy and partner coordination for four direct REDD+/IFM development opportunities across Riau and Kalimantan. I developed a nature-based carbon commercial model spanning phased project capital, landholder and community economics, investor returns and offtake pathways. Three forest projects in this work have Verra project IDs.
 
