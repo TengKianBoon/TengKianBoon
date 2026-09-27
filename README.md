@@ -1,14 +1,14 @@
 # Kian Boon (John) Teng
 
-**AI solutions and forest-carbon origination leader** · Climate finance · Product strategy · Solution architecture · Singapore–Indonesia
+**AI solutions and nature-based carbon origination leader** · Climate finance · Product strategy · Solution architecture · Singapore–Indonesia
 
 I connect business priorities to AI products and climate project development, drawing on 25+ years of enterprise technology and operating leadership across Singapore and Indonesia.
 
-At 180Climate, I lead forest-carbon origination, commercial and financing strategy, partner coordination, and AI product direction. The digital tools below grow from real project-development needs.
+At 180Climate, I lead nature-based carbon origination, commercial and financing strategy, partner coordination, and AI product direction. The digital tools below grow from real project-development needs.
 
 ## Forest-carbon origination and climate finance
 
-I lead screening, fundraising strategy and partner coordination for four direct REDD+/IFM development opportunities across Riau and Kalimantan. I developed a forest-carbon commercial model spanning phased project capital, landholder and community economics, investor returns and offtake pathways. Three forest projects in this work have Verra project IDs.
+I lead screening, fundraising strategy and partner coordination for four direct REDD+/IFM development opportunities across Riau and Kalimantan. I developed a nature-based carbon commercial model spanning phased project capital, landholder and community economics, investor returns and offtake pathways. Three forest projects in this work have Verra project IDs.
 
 180Climate is affiliated with PT Global Alam Lestari. Its VCS/CCB-certified project has been recognised as a Natural Climate Solutions Lighthouse and rated A by BeZero Carbon. This operating foundation informs my approach to project screening, commercial design and practical climate technology.
 
@@ -44,7 +44,7 @@ Source, architecture and decision records: **[180climate-app](https://github.com
 
 ## Leadership
 
-- **Co-Founder & COO, 180Climate** (2023–): forest-carbon origination, commercial modelling and fundraising strategy across Riau and Kalimantan, alongside product direction for three 180Climate applications.
+- **Co-Founder & COO, 180Climate** (2023–): nature-based carbon origination, commercial modelling and fundraising strategy across Riau and Kalimantan, alongside product direction for three 180Climate applications.
 - **VP Business Development, Aserra Partners** (2022–): waste-to-energy consortium facilitation and electric heavy-haulage in Indonesia.
 - **Chief Operating & Commercial Officer, PT Ocean Metal Indo** (2011–2023): took a regulated 11,260-hectare industrial asset from greenfield through production, including a managed divestiture process.
 - **President Director & Country Manager, Gemalto Indonesia** (now Thales): government-tender consortia for national eID and ePassport programmes; earlier, Oracle E-Business Suite solutioning and solution architecture for Fortune-500 clients.
