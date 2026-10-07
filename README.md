@@ -1,75 +1,47 @@
-# Kian Boon (John) Teng
+# Teng Kian Boon
 
-**AI solutions and business transformation executive** · Commercial strategy · Solution architecture · AI adoption · Singapore–Indonesia
+**AI solution architecture and product delivery · Business transformation · Singapore–Indonesia**
 
-I connect business plans, financial models and operating priorities to useful AI-assisted solutions. My 25+ years span enterprise technology, country leadership and regulated operations. At 180Climate, I direct AI-assisted products built around real project and due-diligence workflows, alongside nature-based project development and commercial financing.
+I translate business processes and commercial priorities into useful AI applications. I own the decisions connecting use-case selection, requirements, application and data architecture, AI orchestration, acceptance criteria and release.
 
-## From business case to adopted solution
+My portfolio includes two live screening tools, a controlled field-services beta, and inspectable evaluation and knowledge workflows. The examples below show my contribution, the design choices behind each solution, and the code or delivery records supporting them.
 
-I start with the commercial question: which process should change, where AI adds value, what investment case supports it, and what will make the solution useful to the people expected to use it. I turn those choices into requirements, architecture, build/buy/partner decisions, delivery priorities and adoption pathways. Governance, security, privacy, human review and trust shape the design and release gates.
+I bring 25+ years of enterprise technology, country leadership and operating experience across Singapore and Indonesia. My recent portfolio makes that judgment inspectable through working applications, architecture decisions, source code and delivery records.
 
-At 180Climate, I direct two live screening applications and an invited Fieldwork pilot. I set product requirements, architecture decisions, acceptance criteria and release gates; the repositories below show the resulting code, decision records and tests.
+## Selected work
 
-## Built and launched
+| Project | Problem and personal contribution | Evidence to explore |
+| --- | --- | --- |
+| **180Climate screening platform** | Selected land-plot and nature-based project screening problems; directed two live tools on a shared geospatial foundation. Defined typed contracts, traceable calculations, explicit evidence states and acceptance criteria. | [EUDR demo](https://eudr.180climate.net) · [Carbon demo](https://carbon.180climate.net) · [Architecture and contribution](https://github.com/TengKianBoon/180climate-app) |
+| **LLM Decision Lab** | Designed a browser workspace for comparing supplied model answers against the question and project context. Defined weighted criteria, blind labels, two-pass review and human escalation. | [Project and contribution](https://github.com/TengKianBoon/llm-decision-lab) · [Evaluation logic](https://github.com/TengKianBoon/llm-decision-lab/blob/main/assets/app-core.js) |
+| **Governed Audio Learning Pipeline** | Designed a local-first knowledge workflow with private source storage, configurable synthesis, cost and quality gates, and reviewed publication. Connected processing stages to reusable tool contracts and operating runbooks. | [Architecture and contribution](https://github.com/TengKianBoon/governed-audio-learning-pipeline) · [Operating controls](https://github.com/TengKianBoon/governed-audio-learning-pipeline/blob/main/docs/enterprise-readiness.md) |
+| **Fieldwork controlled beta** | Connected service requirements to private requester/provider intake, operator review and consent before contact sharing. Shaped data schemas, access boundaries and recovery procedures. | [Public entry](https://eudr.180climate.net/fieldwork) · [Dated deployment verification](https://github.com/TengKianBoon/180climate-app/blob/main/docs/data-control/controlled-beta-status-2026-09-24.md) |
+| **AI Vendor Presentation Monitor** | Defined a trusted-source policy and repeatable discovery, filtering, deduplication and digest workflow for official AI presentations. Set acceptance criteria and reviewed AI-assisted implementation. | [Project, workflow and contribution](https://github.com/TengKianBoon/ai-vendor-presentation-monitor) |
 
+## How I deliver
 
-Three applications turn climate and fieldwork questions into practical tools for forest owners, exporters and project developers.
+- **Business to architecture:** choose a valuable workflow, define its users and decisions, and map requirements to interfaces, data contracts and operating responsibilities.
+- **Appropriate AI boundaries:** select where models assist, retain reproducible calculation logic where traceability matters, and make human decisions explicit.
+- **Governance through design:** separate public and private records, control access and contact sharing, and connect publication to review and approval.
+- **AI-assisted development:** define agent roles, context, acceptance criteria, review responsibilities and bounded correction cycles; retain product, architecture and release ownership.
+- **Inspectable delivery:** connect a demonstration to an architecture decision, relevant code, tests or dated verification, and my personal contribution.
 
+The screening platform uses a shared FastAPI/Python foundation; Fieldwork adds structured SQLite records. Technologies support the workflow and its controls.
 
-| Tool | What it does |
-|---|---|
-| **[Carbon Pre-Feasibility Screening](https://carbon.180climate.net)** | Provides a free first screen in minutes: an indicative credit range with an IPCC Tier label, a forest-loss map and an auto-routed methodology for Indonesian concession holders. |
-| **[EUDR Plot Check](https://eudr.180climate.net)** | Screens export plots of palm oil, rubber, timber, cocoa and coffee against the EU's own JRC forest baseline plus global satellite loss and radar alerts, with findings in hectares and a geolocation pack for due-diligence statements. |
-| **[Fieldwork Network](https://one80climate-fieldwork-preview.onrender.com/fieldwork)** | An invited pilot connecting project needs with qualified field practitioners across Indonesia through private intake and human review. |
+## Two decisions to inspect
 
+**Traceable Carbon results:** I requested that results expose inputs and intermediate calculations, connecting an early investment question to a reviewable output. [Decision record](https://github.com/TengKianBoon/180climate-app/blob/b4ac414789659bfbb56f19599a87cbe72a01a2d2/docs/adr/ADR-0014-derivation-trace.md).
 
-Source, architecture and decision records: **[180climate-app](https://github.com/TengKianBoon/180climate-app)**
+**Explicit EUDR evidence states:** I approved contracts that make insufficient evidence visible to the user and keep screening decisions reproducible. [Decision record](https://github.com/TengKianBoon/180climate-app/blob/b4ac414789659bfbb56f19599a87cbe72a01a2d2/docs/adr/ADR-0018-eudr-contracts.md) · [Decision logic](https://github.com/TengKianBoon/180climate-app/blob/b4ac414789659bfbb56f19599a87cbe72a01a2d2/engines/eudr/triage.py#L45-L79) · [Tests](https://github.com/TengKianBoon/180climate-app/blob/b4ac414789659bfbb56f19599a87cbe72a01a2d2/tests/test_eudr_triage.py#L50-L90).
 
+## Commercial and operating perspective
 
-## How I build
+My earlier work includes President Director and Country Manager responsibilities at Gemalto Indonesia, enterprise solutioning and partner coordination, Oracle E-Business Suite business-process work, and industrial-asset development and operations. At 180Climate, I connect product direction with project origination, commercial and financing models, fundraising strategy and partner coordination.
 
+## Professional development
 
-- **One foundation, two products.** Carbon screening and EUDR plot checks share a typed geospatial core and satellite-data layer, reusing tested calculations across both applications.
-- **Traceable calculations.** Deterministic calculation engines, uncertainty carried as a range, and a calculation trace that shows every input and intermediate value.
-- **Evidence built in.** Typed contracts, tests and CI checks make inputs, methods and results reviewable.
-- **AI-assisted product delivery.** I designed a role-separated agent workflow for implementation, review, verification and tests. I set product requirements, architecture and acceptance criteria, then review evidence before release.
-- **Governance by design.** Traceable calculations, human review and release gates support reliable AI-assisted delivery.
+NTU FlexiMasters in Business AI and Technology (2026) · 15 Academic Units · CGPA 4.80/5.00.
 
+## Further portfolio work
 
-**Under the hood:** [architecture](https://github.com/TengKianBoon/180climate-app#2-understand-the-architecture) · [18 decision records](https://github.com/TengKianBoon/180climate-app/tree/main/docs/adr) · [460+ automated tests](https://github.com/TengKianBoon/180climate-app/actions/runs/28553478682/job/84655746161) · [agent roles](https://github.com/TengKianBoon/180climate-app#how-i-orchestrated-development) · [tagged releases](https://github.com/TengKianBoon/180climate-app/releases)
-
-
-## Nature-based carbon origination and climate finance
-
-
-I lead screening, fundraising strategy and partner coordination for four direct REDD+/IFM development opportunities across Riau and Kalimantan. I developed a nature-based carbon commercial model spanning phased project capital, landholder and community economics, investor returns and offtake pathways. Three forest projects in this work have Verra project IDs.
-
-
-180Climate is affiliated with PT Global Alam Lestari. Its VCS/CCB-certified project has been recognised as a Natural Climate Solutions Lighthouse and rated A by BeZero Carbon. This operating foundation informs my approach to project screening, commercial design and practical climate technology.
-
-
----
-
-
-## Also building
-
-
-- **[LLM Decision Lab](https://github.com/TengKianBoon/llm-decision-lab)**: puts four models' answers to one question under a single rubric, with two-pass judging, adversarial review and human escalation for close calls.
-- **[Governed Audio Learning Pipeline](https://github.com/TengKianBoon/governed-audio-learning-pipeline)**: turns spoken material into governed knowledge (transcripts, quality-scored summaries and a growing concept map), with a publish gate between private raw material and public output.
-- **[AI Vendor Monitor](https://github.com/TengKianBoon/ai-vendor-presentation-monitor)**: tracks official AI-vendor sources and distils them into a curated digest.
-
-
-## Leadership
-
-
-- **Co-Founder & COO, 180Climate** (2023–): product direction for three AI-assisted applications, alongside nature-based carbon origination, commercial modelling and fundraising strategy across Riau and Kalimantan.
-- **VP Business Development, Aserra Partners** (2022–): waste-to-energy consortium facilitation and electric heavy-haulage in Indonesia.
-- **Chief Operating & Commercial Officer, PT Ocean Metal Indo** (2011–2023): took a regulated 11,260-hectare industrial asset from greenfield through production, including a managed divestiture process.
-- **President Director & Country Manager, Gemalto Indonesia** (now Thales): government-tender consortia for national eID and ePassport programmes; earlier, Oracle E-Business Suite solutioning and solution architecture for Fortune-500 clients.
-- **NTU FlexiMasters in Business AI and Technology**: CGPA 4.80/5.00 (A+, A+, A, A−, A−).
-
-
-Always happy to compare notes.
-
-
-**[LinkedIn](https://www.linkedin.com/in/kian-boon-teng-7aa84933/)** · **[180climate.net](https://www.180climate.net)**
+**APMA multilingual audio workflows:** provider selection, long-file processing, speaker review and regional speech use cases, including Qwen for Hokkien and MERaLiON for Singlish. APMA complements the projects above with audio architecture, AI-assisted delivery and provider-cost judgment.
