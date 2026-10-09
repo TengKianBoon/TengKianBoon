@@ -1,27 +1,12 @@
 # Kian Boon (John) Teng
 
-**AI Solutions Architect · business builder, operator and investor · hands-on AI delivery** · Singapore–Indonesia
+**AI Solutions Architect · hands-on Python and agentic AI · C-suite business judgment** · Singapore–Indonesia
 
-Boardroom to codebase. I build businesses and the AI systems that help them work. My starting point is the customer or investment decision, the economics behind it and the operating model needed to deliver it. I then connect those needs to workflows, data, people and working technology.
+Boardroom to codebase. I turn business problems into working AI solutions, from the decision and architecture through implementation, testing and release. I am Co-Founder and COO of 180Climate, building with Claude Code, Claude Cowork and Codex and owning the delivery decisions.
 
-I am Co-Founder and COO of 180Climate. I build with Claude Code, Claude Cowork and Codex, working through architecture, implementation, review, browser QA and release corrections. My portfolio connects working tools to decisions, source, tests and my contribution.
+My edge is the combination: hands-on AI delivery with the commercial and operating judgment to identify the problem, test assumptions and connect the solution to how the business works.
 
-## Business and investment experience
-
-- **PT Ocean Metal Indo — Chief Operating and Commercial Officer, 2011–2023.** Originated and led investment, financing, development and operations for the regulated 11,260-hectare PT Tuhup asset in Kalimantan, from greenfield into production and a managed divestiture process. Built infrastructure, operating functions and teams, and coordinated regulators, communities, customers and delivery partners.
-- **Gemalto Indonesia — President Director and Country Manager.** Led country operations and executive customer relationships; formed and led multi-vendor consortia for national eID and ePassport tenders, aligning technical, commercial and government stakeholders.
-- **180Climate — Co-Founder and COO.** Lead screening, commercial preparation, fundraising strategy and partner coordination for four direct Indonesian REDD+/IFM development opportunities. Built the commercial and financing model for phased capital, landholder/community economics, investor returns and offtake pathways.
-- **Aserra Partners — Vice President of Business Development.** Coordinate sustainable-infrastructure opportunities and waste-to-energy consortium work; advanced a heavy-haulage electrification pilot in Indonesia.
-
-## From business case to working solution
-
-My approach connects the whole decision cycle:
-
-1. **Evaluate the opportunity:** the user or buyer, the problem, the commercial proposition and the evidence needed to proceed.
-2. **Design the business and operating model:** capital and cost assumptions, value to stakeholders, partners, responsibilities and delivery dependencies.
-3. **Map the workflow:** who decides, which information they need, how it moves and where AI, deterministic logic or human judgment belongs.
-4. **Build and test:** architecture, data contracts, implementation and release, with controls that fit the operating use.
-5. **Learn and improve:** use feedback, operating observations and commercial requirements to decide what to change, expand or stop.
+**Focus:** AI Solutions Architect, senior forward-deployed AI delivery and climate leadership with an AI edge. [Connect on LinkedIn](https://www.linkedin.com/in/kian-boon-teng-7aa84933/).
 
 ## Applications built around business decisions
 
@@ -31,21 +16,22 @@ My approach connects the whole decision cycle:
 | **EUDR Plot Check — live** | Prioritise export due-diligence work: connect geospatial inputs, typed APIs and explicit evidence states to the plots and evidence needing review. | [Try EUDR](https://eudr.180climate.net/) · [Decision logic](https://github.com/TengKianBoon/180climate-app/blob/main/engines/eudr/triage.py) |
 | **Fieldwork — native controlled public beta** | Connect project demand with field-service capability: private intake and operator review, SQLite records, consent before contact sharing and recovery procedures. | [Public entry](https://eudr.180climate.net/fieldwork) · [Dated verification](https://github.com/TengKianBoon/180climate-app/blob/main/docs/data-control/controlled-beta-status-2026-09-24.md) |
 
-## How I build
+## How I build and improve AI applications
 
-1. **Business to architecture:** define the user, decision and commercial purpose; map the workflow to data, interfaces and operating responsibilities.
-2. **Appropriate AI boundaries:** use models where interpretation helps; retain reproducible calculation and screening logic where traceability matters.
-3. **Governance in the workflow:** design access controls, private/public data boundaries, consent and human-review points into the application.
-4. **Agent-assisted implementation:** configure roles, context, acceptance criteria and bounded retries; inspect code and results, run browser QA and resolve release defects.
-5. **Inspectable delivery:** connect demonstrations to decisions, implementation and tests. The screening platform uses FastAPI/Python; Fieldwork adds structured SQLite records.
+- **Translate the problem into a working design.** Map the user’s decision, business purpose and operating responsibilities to data, workflows, APIs and acceptance criteria.
+- **Build hands-on with an agent team.** Configure implementation, review, verification and testing roles, scoped context and bounded retries. Inspect code, run browser QA and work through release corrections.
+- **Make numerical results reproducible.** Python/FastAPI services, typed contracts and deterministic engines connect inputs to calculations and evidence states; models assist where interpretation is useful.
+- **Build controls into the workflow.** Operator access, private/public data boundaries, structured SQLite records, consent and human-review points support the operating use.
+- **Keep proof close to the implementation.** Architecture decisions, source, regression tests and dated delivery records make the work inspectable. The documented 1 July 2026 CI result is **461 tests passed and 2 skipped**.
 
-### Two architecture decisions to inspect
+## Hardening AI-generated code: two concrete examples
 
-**Traceable Carbon results:** I designed the requirement for visible inputs and intermediate calculations, connecting an early investment question to an inspectable output. [ADR-0014](https://github.com/TengKianBoon/180climate-app/blob/b4ac414789659bfbb56f19599a87cbe72a01a2d2/docs/adr/ADR-0014-derivation-trace.md).
+At 180Climate, I worked through corrections that connect domain judgment to application behaviour:
 
-**Explicit EUDR evidence states:** I shaped and approved typed contracts that expose insufficient evidence and keep screening decisions reproducible. [ADR-0018](https://github.com/TengKianBoon/180climate-app/blob/b4ac414789659bfbb56f19599a87cbe72a01a2d2/docs/adr/ADR-0018-eudr-contracts.md) · [Decision logic](https://github.com/TengKianBoon/180climate-app/blob/b4ac414789659bfbb56f19599a87cbe72a01a2d2/engines/eudr/triage.py#L45-L79) · [Tests](https://github.com/TengKianBoon/180climate-app/blob/b4ac414789659bfbb56f19599a87cbe72a01a2d2/tests/test_eudr_triage.py#L50-L90).
+- **Peat routing:** an independent review identified an unsuitable methodology reference. The route was corrected and golden-case tests prevent that reference returning. [Decision and review context](https://github.com/TengKianBoon/180climate-app/blob/main/docs/adr/ADR-0012-peat-routing-correction.md) · [Regression tests](https://github.com/TengKianBoon/180climate-app/blob/main/tests/test_golden.py).
+- **Uncertainty propagation:** density and loss-rate variability were added to the estimate range, with the non-permanence buffer applied separately. I approved the documented change and worked through the release correction. [ADR-0016](https://github.com/TengKianBoon/180climate-app/blob/main/docs/adr/ADR-0016-uncertainty-propagation.md).
 
-The documented **1 July 2026 public CI result is 461 passed tests and 2 skipped**. The repository provides architecture decisions and release references alongside the source.
+This is how I improve AI-generated applications: locate the weak assumption, inspect the data and code path, correct the behaviour and preserve the result in tests.
 
 ## Evaluation, knowledge and automation
 
@@ -56,10 +42,19 @@ The documented **1 July 2026 public CI result is 461 passed tests and 2 skipped*
 | **AI Vendor Presentation Monitor** | Configuration-driven discovery, trusted-source filtering, deduplication, optional transcript processing and digest preparation. | [Project](https://github.com/TengKianBoon/ai-vendor-presentation-monitor) |
 | **APMA multilingual audio workflows** | Regional speech and long-file processing, including Qwen for Hokkien and MERaLiON for Singlish; conversion, chunking, stitching, provider comparison and speaker review. | [Project](https://github.com/TengKianBoon/apma-singapore-asr) |
 
-## Commercial and technical foundations
+## The executive edge behind the delivery
 
-Earlier enterprise work includes 13 years of IT consulting, presales and channel responsibilities, including Oracle business-process solutioning and solution architecture. My operating and investment experience gives those technical choices a business context: capital, customers, delivery, people and stakeholder commitments.
+- **PT Ocean Metal Indo — Chief Operating and Commercial Officer, 2011–2023.** Originated and led investment, financing, development and operations for a regulated 11,260-hectare asset, from greenfield into production and a managed divestiture process. Built infrastructure, operating functions and teams; coordinated customers, regulators, communities and delivery partners.
+- **Gemalto Indonesia — President Director and Country Manager.** Led country operations, executive customer relationships and multi-vendor consortia for national eID and ePassport tenders, connecting technical and commercial decisions with government stakeholders.
+- **180Climate — Co-Founder and COO.** Lead four Indonesian REDD+/IFM development opportunities: screening, commercial preparation, fundraising strategy and partner coordination. Built the commercial and financing model for phased capital, landholder/community economics, returns and offtake pathways.
+- **Aserra Partners — Vice President of Business Development.** Sustainable-infrastructure opportunity development, waste-to-energy consortium coordination and a heavy-haulage electrification pilot in Indonesia.
 
-**NTU FlexiMasters in Business AI and Technology (2026)** · 15 Academic Units · CGPA 4.80/5.00. Executive Mentor, Singapore Leaders Network · co-inventor on a telecom-security patent family.
+180Climate’s affiliated PT Global Alam Lestari (GAL) project has VCS/CCB certification and Natural Climate Solutions Lighthouse recognition; BeZero recorded an A rating in November 2025.
 
-**Hiring for AI solution architecture, forward-deployed AI delivery, business transformation or executive operating leadership?** [Connect on LinkedIn](https://www.linkedin.com/in/kian-boon-teng-7aa84933/).
+## Business purpose, architecture and feedback
+
+I begin with the customer or investment decision and its economics. I map responsibilities and delivery dependencies, build the workflow, then use operating feedback to decide what to improve, expand or stop. Executive experience helps me ask the right commercial questions; hands-on AI capability lets me turn them into a working solution.
+
+**Foundations:** enterprise IT consulting, presales and channel work, including Oracle business-process solutioning; NTU FlexiMasters in Business AI and Technology (2026), 15 Academic Units, **CGPA 4.80/5.00**; Executive Mentor, Singapore Leaders Network; telecom-security patent co-inventor.
+
+**Let’s discuss the business problem and the AI solution you want delivered.** [LinkedIn](https://www.linkedin.com/in/kian-boon-teng-7aa84933/) · [180Climate](https://www.180climate.net/)
