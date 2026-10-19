@@ -44,9 +44,9 @@ This is how I improve AI-generated applications: locate the weak assumption, ins
 
 ## The executive edge behind the delivery
 
-- **PT Ocean Metal Indo — Chief Operating and Commercial Officer, 2011–2023.** Originated and led investment, financing, development and operations for a regulated 11,260-hectare asset, from greenfield into production and a managed divestiture process. Built infrastructure, operating functions and teams; coordinated customers, regulators, communities and delivery partners.
-- **Gemalto Indonesia — President Director and Country Manager.** Led country operations, executive customer relationships and multi-vendor consortia for national eID and ePassport tenders, connecting technical and commercial decisions with government stakeholders.
 - **180Climate — Co-Founder and COO.** Lead four Indonesian REDD+/IFM development opportunities: screening, commercial preparation, fundraising strategy and partner coordination. Built the commercial and financing model for phased capital, landholder/community economics, returns and offtake pathways.
+- **Gemalto Indonesia — President Director and Country Manager.** Led country operations, executive customer relationships and multi-vendor consortia for national eID and ePassport tenders, connecting technical and commercial decisions with government stakeholders.
+- **PT Ocean Metal Indo — Chief Operating and Commercial Officer, 2011–2023.** Originated and led investment, financing, development and operations for a regulated 11,260-hectare asset, from greenfield into production and a managed divestiture process. Built infrastructure, operating functions and teams; coordinated customers, regulators, communities and delivery partners.
 - **Aserra Partners — Vice President of Business Development.** Sustainable-infrastructure opportunity development, waste-to-energy consortium coordination and a heavy-haulage electrification pilot in Indonesia.
 
 180Climate’s affiliated PT Global Alam Lestari (GAL) project has VCS/CCB certification and Natural Climate Solutions Lighthouse recognition; BeZero recorded an A rating in November 2025.
