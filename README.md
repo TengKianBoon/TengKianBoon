@@ -56,6 +56,6 @@ This is how I improve AI-generated applications: locate the weak assumption, ins
 
 I begin with the customer or investment decision and its economics. I map responsibilities and delivery dependencies, build the workflow, then use operating feedback to decide what to improve, expand or stop. Executive experience helps me ask the right commercial questions; hands-on AI capability lets me turn them into a working solution.
 
-**Foundations:** enterprise IT consulting, presales and channel work, including Oracle business-process solutioning; NTU FlexiMasters in Business AI and Technology (2026), 15 Academic Units, **CGPA 4.80/5.00**; Executive Mentor, Singapore Leaders Network; telecom-security patent co-inventor.
+**Foundations:** enterprise technology business development across digital identity, Oracle E-Business Suite and integration middleware; NTU FlexiMasters in Business AI and Technology (2026), 15 Academic Units, **CGPA 4.80/5.00**; Executive Mentor, Singapore Leaders Network; telecom-security patent co-inventor.
 
 **Let’s discuss the business problem and the AI solution you want delivered.** [LinkedIn](https://www.linkedin.com/in/kian-boon-teng-7aa84933/) · [180Climate](https://www.180climate.net/)
