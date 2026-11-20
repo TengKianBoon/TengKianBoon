@@ -2,7 +2,7 @@
 
 **AI Solutions Architect · hands-on Python and agentic AI · C-suite business judgment** · Singapore–Indonesia
 
-Boardroom to codebase. I turn business problems into working AI solutions, from the decision and architecture through implementation, testing and release. I am Co-Founder and COO of 180Climate, building with Claude Code, Claude Cowork and Codex and owning the delivery decisions.
+Boardroom to codebase. I turn business problems into working AI solutions, from the decision and architecture through implementation, testing and release. I am Co-Founder and COO of 180Climate, building with Claude Code, Claude Cowork, Codex and Meta’s Muse Code and owning the delivery decisions.
 
 My edge is the combination: hands-on AI delivery with the commercial and operating judgment to identify the problem, test assumptions and connect the solution to how the business works.
 
@@ -15,11 +15,12 @@ My edge is the combination: hands-on AI delivery with the commercial and operati
 | **Carbon Pre-Feasibility Screening — live** | Qualify early development opportunities: turn investment questions into explicit assumptions, traceable calculations and reviewable screening results before further diligence and capital commitment. | [Try Carbon](https://carbon.180climate.net/) · [Architecture and contribution](https://github.com/TengKianBoon/180climate-app) |
 | **EUDR Plot Check — live** | Prioritise export due-diligence work: connect geospatial inputs, typed APIs and explicit evidence states to the plots and evidence needing review. | [Try EUDR](https://eudr.180climate.net/) · [Decision logic](https://github.com/TengKianBoon/180climate-app/blob/main/engines/eudr/triage.py) |
 | **Fieldwork — native controlled public beta** | Connect project demand with field-service capability: private intake and operator review, SQLite records, consent before contact sharing and recovery procedures. | [Public entry](https://eudr.180climate.net/fieldwork) · [Dated verification](https://github.com/TengKianBoon/180climate-app/blob/main/docs/data-control/controlled-beta-status-2026-09-24.md) |
+| **FieldProof — live, built for Meta’s Global AI Developer Hackathon 2026** | A client’s AI agent drafts a field job and collects the evidence through an MCP server; a person publishes the job, chooses the local professional and decides what evidence to accept. Muse Spark reads each photographed label and returns structured fields, leaving an uncertain code blank; FieldProof flags any mismatch. Signed expiring links, a daily model-spend ceiling and 377 automated tests. | [Try FieldProof](https://fieldproof-180climate.netlify.app) · [Code](https://github.com/TengKianBoon/fieldproof) · [3-minute video](https://github.com/TengKianBoon/fieldproof/releases/download/fieldproof-demo-2026-10-30/fieldproof-demo.mp4) |
 
 ## How I build and improve AI applications
 
 - **Translate the problem into a working design.** Map the user’s decision, business purpose and operating responsibilities to data, workflows, APIs and acceptance criteria.
-- **Build hands-on with an agent team.** Configure implementation, review, verification and testing roles, scoped context and bounded retries. Inspect code, run browser QA and work through release corrections.
+- **Build hands-on with an agent team.** Configure implementation, review, verification and testing roles, scoped context and bounded retries. Inspect code, run browser QA and work through release corrections. For FieldProof I directed two frontier-model agents as planner and critic and Meta’s Muse Code as builder, with a numbered decision log, release gates and a claims audit before release.
 - **Make numerical results reproducible.** Python/FastAPI services, typed contracts and deterministic engines connect inputs to calculations and evidence states; models assist where interpretation is useful.
 - **Build controls into the workflow.** Operator access, private/public data boundaries, structured SQLite records, consent and human-review points support the operating use.
 - **Keep proof close to the implementation.** Architecture decisions, source, regression tests and dated delivery records make the work inspectable. The documented 1 July 2026 CI result is **461 tests passed and 2 skipped**.
@@ -45,9 +46,9 @@ This is how I improve AI-generated applications: locate the weak assumption, ins
 ## The executive edge behind the delivery
 
 - **180Climate — Co-Founder and COO.** Lead four Indonesian REDD+/IFM development opportunities: screening, commercial preparation, fundraising strategy and partner coordination. Built the commercial and financing model for phased capital, landholder/community economics, returns and offtake pathways.
-- **Gemalto Indonesia — President Director and Country Manager.** Led country operations, executive customer relationships and multi-vendor consortia for national eID and ePassport tenders, connecting technical and commercial decisions with government stakeholders.
-- **PT Ocean Metal Indo — Chief Operating and Commercial Officer, 2011–2023.** Originated and led investment, financing, development and operations for a regulated 11,260-hectare asset, from greenfield into production and a managed divestiture process. Built infrastructure, operating functions and teams; coordinated customers, regulators, communities and delivery partners.
+- **Gemalto Indonesia — President Director and Country Manager.** Led country operations, executive customer relationships and multi-vendor consortia for national eID and ePassport tenders. With integration partner Phintraco, brought handheld-terminal and smart-card teams onto one acceptance target: 10,000 test transactions and a two-week pilot reached 99.7% success.
 - **Aserra Partners — Vice President of Business Development.** Sustainable-infrastructure opportunity development, waste-to-energy consortium coordination and a heavy-haulage electrification pilot in Indonesia.
+- **PT Ocean Metal Indo — Chief Operating and Commercial Officer, 2011–2023.** Led operations and commercial for an Indonesian resources company.
 
 180Climate’s affiliated PT Global Alam Lestari (GAL) project has VCS/CCB certification and Natural Climate Solutions Lighthouse recognition; BeZero recorded an A rating in November 2025.
 
