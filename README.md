@@ -6,6 +6,8 @@ Boardroom to codebase. I turn business problems into working AI solutions, from 
 
 My edge is the combination: hands-on AI delivery with the commercial and operating judgment to identify the problem, test assumptions and connect the solution to how the business works.
 
+**Proof at a glance:** agent interfaces on both open protocols, MCP (FieldProof) and A2A (Fieldwork A2A: draft and isolation checks passed on production using synthetic clients) · 461 tests passed and 2 skipped in the 180Climate platform CI (1 July 2026) · design decisions recorded as ADRs and held by regression tests.
+
 **Focus:** AI Solutions Architect, senior forward-deployed AI delivery and climate leadership with an AI edge. [Connect on LinkedIn](https://www.linkedin.com/in/kian-boon-teng-7aa84933/).
 
 ## Applications built around business decisions
@@ -16,6 +18,7 @@ My edge is the combination: hands-on AI delivery with the commercial and operati
 | **EUDR Plot Check — live** | Prioritise export due-diligence work: connect geospatial inputs, typed APIs and explicit evidence states to the plots and evidence needing review. | [Try EUDR](https://eudr.180climate.net/) · [Decision logic](https://github.com/TengKianBoon/180climate-app/blob/main/engines/eudr/triage.py) |
 | **Fieldwork — native controlled public beta** | Connect project demand with field-service capability: private intake and operator review, SQLite records, consent before contact sharing and recovery procedures. | [Public entry](https://eudr.180climate.net/fieldwork) · [Dated verification](https://github.com/TengKianBoon/180climate-app/blob/main/docs/data-control/controlled-beta-status-2026-09-24.md) |
 | **FieldProof — live, built for Meta’s Global AI Developer Hackathon 2026** | A client’s AI agent drafts a field job and collects the evidence through an MCP server; a person publishes the job, chooses the local professional and decides what evidence to accept. Muse Spark reads each photographed label and returns structured fields, leaving an uncertain code blank; FieldProof flags any mismatch. Signed expiring links, a daily model-spend ceiling and 377 automated tests. | [Try FieldProof](https://fieldproof-180climate.netlify.app) · [Code](https://github.com/TengKianBoon/fieldproof) · [3-minute video](https://github.com/TengKianBoon/fieldproof/releases/download/fieldproof-demo-2026-10-30/fieldproof-demo.mp4) |
+| **Fieldwork A2A — live invite-only pilot** | Designed and directed the release of an Agent2Agent (A2A 1.0) endpoint where an invited client’s agent can submit and track field-job drafts. Per-client keys isolate tasks. A private operator queue supports human review with the client and publication of approved jobs. Production proof with synthetic clients passed SDK checks (5/5), isolation checks (16/16) and operator lookup by reference. Local verification included 43 unit tests and a separate contract suite against FieldProof validation. | [Agent Card](https://fieldwork-a2a-180climate.netlify.app/.well-known/agent-card.json) · [Code](https://github.com/TengKianBoon/fieldwork-a2a) · [How it works](https://www.180climate.net/fieldwork/) |
 
 ## How I build and improve AI applications
 
@@ -24,6 +27,8 @@ My edge is the combination: hands-on AI delivery with the commercial and operati
 - **Make numerical results reproducible.** Python/FastAPI services, typed contracts and deterministic engines connect inputs to calculations and evidence states; models assist where interpretation is useful.
 - **Build controls into the workflow.** Operator access, private/public data boundaries, structured SQLite records, consent and human-review points support the operating use.
 - **Keep proof close to the implementation.** Architecture decisions, source, regression tests and dated delivery records make the work inspectable. The documented 1 July 2026 CI result is **461 tests passed and 2 skipped**.
+- **Verify a release before it goes live.** I directed the agents that built, reviewed and verified Fieldwork A2A. The v4.2 production rollout used an independent SHIP review, a named commit, a verified SHA-256 and my explicit approval. We verified the production draft and isolation checks, and independently matched the public GitHub tree byte for byte to the approved release archive.
+- **Design for AI agents as readers and clients.** Publish machine-readable entry points (an Agent Card, `llms.txt`, JSON-LD generated from one facts file with build checks), version the protocol contract, issue per-client keys, enforce task ownership and keep job publication and evidence review with people. [180climate.net/llms.txt](https://www.180climate.net/llms.txt)
 
 ## Hardening AI-generated code: two concrete examples
 
